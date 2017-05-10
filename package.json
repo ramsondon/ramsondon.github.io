@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "description": "portfolio and blog of Matthias Schmid",
+  "title": "ramsondon.github.io",
+  "version": "1.0.0",
+  "homepage": "https://ramsondon.github.io",
+  "author": "Matthias Schmid",
+  "email": "ramsondon@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.10",
+    "gulp-concat": "^2.6.1",
+    "gulp-filter": "^4.0.0",
+    "gulp-header": "^1.8.7",
+    "gulp-less": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ramsondon/ramsondon.github.io.git"
+  }
+}

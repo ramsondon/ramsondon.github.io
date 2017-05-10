@@ -1,0 +1,40 @@
+{
+  "posts": [
+	{
+	  "id": "coursera-pattern-discovery",
+	  "img": {
+		"src": "web/img/certificates/certificate_coursera_patterndiscovery.png",
+		"alt": "cake"
+	  },
+	  "project": {
+		"date": "March 2015",
+		"title": "Pattern Discovery in Data Mining",
+		"description": "Pattern Discovery in Data Mining by University of Illinois at Urbana-Champaign on Coursera. Certificate earned on March 19, 2015<br/><a class=\"btn btn-success\" href=\"https://www.coursera.org/account/accomplishments/certificate/D6MMR4CS33\">Show pdf</a>"
+	  }
+	},
+	{
+	  "id": "coursera-textretrieval",
+	  "img": {
+		"src": "web/img/certificates/certificate_coursera_textretrieval.png",
+		"alt": ""
+	  },
+	  "project": {
+		"date": "April 2015",
+		"title": "Text Retrieval and Search Engines",
+		"description": "Text Retrieval and Search Engines by University of Illinois at Urbana-Champaign on Coursera. Certificate earned on April 19, 2015<br/><a class=\"btn btn-success\" href=\"https://www.coursera.org/account/accomplishments/certificate/MTR5UQEPNT\">Show pdf</a>"
+	  }
+	},
+	{
+	  "id": "mongodb-m101p",
+	  "img": {
+		"src": "web/img/certificates/certificate_mongodb_m101p.png",
+		"alt": ""
+	  },
+	  "project": {
+		"date": "October - December 2015",
+		"title": "MongoDB",
+		"description": "MongoDB for Developers at <a href=\"https://university.mongodb.com\">MongoDB University</a> earned on December 8, 2015<br/><a class=\"btn btn-success\" href=\"web/pdf/certificate_mongodb_m101p.pdf\">Show pdf</a>"
+	  }
+	}
+  ]
+}
