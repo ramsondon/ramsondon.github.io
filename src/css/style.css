@@ -19,6 +19,7 @@ a:focus,
 a:active,
 a.active {
   color: #1784c7;
+  outline: none;
 }
 h1,
 h2,
@@ -111,6 +112,7 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-brand {
   color: white;
+  text-transform: none;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
@@ -191,6 +193,13 @@ section.success {
   section.first {
     padding-top: 75px;
   }
+}
+.profile-img {
+  width: 256px;
+  height: 256px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
 }
 #portfolio .portfolio-item {
   margin: 0 0 15px;

@@ -20,6 +20,7 @@ a:focus,
 a:active,
 a.active {
 	color: @theme-success;
+  	outline:none
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -123,7 +124,8 @@ header {
 	border: none;
 	.navbar-brand {
 		color: white;
-		&:hover,
+	  	text-transform: none;
+	  &:hover,
 		&:focus,
 		&:active,
 		&.active {
@@ -213,6 +215,15 @@ section.success {
 		padding-top: 75px;
 	}
 }
+
+.profile-img {
+  width: 256px;
+  height: 256px;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  border-radius: 50%;
+}
+
 
 #portfolio {
     .portfolio-item {
