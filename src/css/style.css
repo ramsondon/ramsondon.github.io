@@ -70,6 +70,15 @@ hr.star-primary:after {
 header {
   text-align: center;
   background: #1784c7;
+  background-image: url("..\/img\/bg.jpg");
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
   color: white;
 }
 header .container {
@@ -109,6 +118,13 @@ header .intro-text .skills {
   text-transform: uppercase;
   font-weight: 700;
   border: none;
+}
+.navbar-custom .navbar-img {
+  float: left;
+  width: 50px;
+  height: 50px;
+  display: none;
+  margin-right: 5px;
 }
 .navbar-custom .navbar-brand {
   color: white;
@@ -194,12 +210,35 @@ section.success {
     padding-top: 75px;
   }
 }
-.profile-img {
+#profile-img {
   width: 256px;
   height: 256px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
+}
+.img-zoom.img-centered {
+  margin: 0 auto;
+}
+.img-zoom img {
+  -webkit-transition: all 0.3s ease;
+  /* Safari and Chrome */
+  -moz-transition: all 0.3s ease;
+  /* Firefox */
+  -o-transition: all 0.3s ease;
+  /* IE 9 */
+  -ms-transition: all 0.3s ease;
+  /* Opera */
+  transition: all 0.3s ease;
+  max-width: 100%;
+}
+.img-zoom:hover img {
+  -webkit-transform: scale(1.1);
+  /* Safari and Chrome */
+  -moz-transform: scale(1.1);
+  /* Firefox */
+  -ms-transform: scale(1.1);
+  /* IE 9 */
+  -o-transform: scale(1.1);
+  /* Opera */
+  transform: scale(1.1);
 }
 #portfolio .portfolio-item {
   margin: 0 0 15px;

@@ -12,7 +12,7 @@
 			var append_html = function (tpl, post) {
 				r = _.template(tpl.html());
 				html = r(model);
-				tpl.parent().append($(html));
+				tpl.after($(html));
 			};
 
 			var r, html, model;

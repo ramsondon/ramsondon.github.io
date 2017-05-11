@@ -74,8 +74,8 @@ hr.star-primary:after {
 
 header {
 	text-align: center;
-	background: @theme-success;
-	color: white;
+	.background-image("..\/img\/bg.jpg", @theme-success);
+  	color: white;
 	.container {
 		padding-top: 100px;
 		padding-bottom: 50px;
@@ -122,9 +122,18 @@ header {
 	text-transform: uppercase;
 	font-weight: 700;
 	border: none;
+
+
+  .navbar-img {
+	float:left;
+	width: 50px;
+	height: 50px;
+	display: none;
+	margin-right: 5px;
+  }
 	.navbar-brand {
-		color: white;
-	  	text-transform: none;
+	  color: white;
+	  text-transform: none;
 	  &:hover,
 		&:focus,
 		&:active,
@@ -216,14 +225,32 @@ section.success {
 	}
 }
 
-.profile-img {
+#profile-img {
   width: 256px;
   height: 256px;
-  -webkit-border-radius:50%;
-  -moz-border-radius:50%;
-  border-radius: 50%;
 }
 
+.img-zoom {
+  &.img-centered {
+	margin: 0 auto;
+  }
+
+  img {
+	-webkit-transition: all 0.3s ease; /* Safari and Chrome */
+	-moz-transition: all 0.3s ease; /* Firefox */
+	-o-transition: all 0.3s ease; /* IE 9 */
+	-ms-transition: all 0.3s ease; /* Opera */
+	transition: all 0.3s ease;
+	max-width: 100%;
+  }
+  &:hover img {
+	-webkit-transform:scale(1.1); /* Safari and Chrome */
+	-moz-transform:scale(1.1); /* Firefox */
+	-ms-transform:scale(1.1); /* IE 9 */
+	-o-transform:scale(1.1); /* Opera */
+	transform:scale(1.1);
+  }
+}
 
 #portfolio {
     .portfolio-item {
@@ -497,3 +524,10 @@ footer {
 div#maincontent{
 	outline: none;
 }
+//
+//section#education {
+//  .background-image("..\/img\/pexels-photo-160107.jpeg", @theme-success);
+//}
+//section#about {
+  //.background-image("..\/img\/pexels-photo-160107.jpeg", @theme-success);
+//}

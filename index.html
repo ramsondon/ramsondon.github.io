@@ -28,7 +28,9 @@
 	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
-
+	<script src="web/js/twitter.min.js"></script>
+	<!-- Place this tag in your head or just before your close body tag. -->
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
 </head>
 
 <body id="page-top" class="index">
@@ -42,7 +44,10 @@
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 				<span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
 			</button>
-			<a class="navbar-brand" href="#page-top">ramsondon.github.io</a>
+			<img class="navbar-img img-circle img-responsive" src="web/img/matthias.jpg" alt="">
+			<a class="navbar-brand" href="#page-top">
+				ramsondon.github.io
+			</a>
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
@@ -52,7 +57,13 @@
 					<a href="#page-top"></a>
 				</li>
 				<li class="page-scroll">
-					<a href="#portfolio">Portfolio</a>
+					<a href="#experience">Experience</a>
+				</li>
+				<li class="page-scroll">
+					<a href="#education">Education</a>
+				</li>
+				<li class="page-scroll">
+					<a href="#portfolio">Certificates</a>
 				</li>
 				<li class="page-scroll">
 					<a href="#about">About</a>
@@ -72,23 +83,85 @@
 	<div class="container" id="maincontent" tabindex="-1">
 		<div class="row">
 			<div class="col-lg-12">
-				<img class="img-responsive profile-img" src="web/img/matthias.jpg" alt="">
+				<div id="profile-img" class="img-zoom img-centered">
+					<img class="img-circle img-responsive" src="web/img/matthias.jpg" alt="">
+				</div>
 				<div class="intro-text">
 					<h1 class="name">Matthias Schmid, M.Sc.</h1>
-					<hr class="star-light">
-					<span class="skills">Software Engineer</span>
+					<p><br/></p><!--<hr class="star-light">-->
+					<span class="skills">Software Engineer - System Architect - Web Developer</span>
 				</div>
 			</div>
 		</div>
 	</div>
 </header>
 
+
+<!-- About Section -->
+<section class="success" id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2>About</h2>
+				<hr class="star-light">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 text-center">
+				<p>... some description ...</p>
+			</div>
+			<div class="col-lg-4 col-lg-offset-2 text-center">
+				<p>... some description ...</p>
+			</div>
+			<div class="col-lg-4 text-center">
+				<p>... some description ...</p>
+			</div>
+			<div class="col-lg-8 col-lg-offset-2 text-center">
+				<a class="btn btn-lg twitter-follow-button" href="https://twitter.com/ramsondon" data-size="large">
+					<i class="fa fa-twitter"></i> Follow @ramsondon
+				</a>
+				<a class="btn btn-lg github-button" href="https://github.com/ramsondon/ramsondon.github.io/subscription" data-size="large" data-show-count="true" aria-label="Watch ramsondon/ramsondon.github.io on GitHub">Watch</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section id="experience">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2>Experience</h2>
+				<hr class="star-primary">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12"><p>working experience here...</p></div>
+		</div>
+	</div>
+</section>
+
+
+<section class="success" id="education">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2>Education</h2>
+				<hr class="star-light">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12"><p>education here...</p></div>
+		</div>
+	</div>
+</section>
+
 <!-- Portfolio Grid Section -->
 <section id="portfolio">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 text-center">
-				<h2>Portfolio</h2>
+				<h2>Certificates</h2>
 				<hr class="star-primary">
 			</div>
 		</div>
@@ -109,33 +182,6 @@
 	</div>
 </section>
 
-<!-- About Section -->
-<section class="success" id="about">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 text-center">
-				<h2>About</h2>
-				<hr class="star-light">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-8 col-lg-offset-2">
-				<p>I'm a full stack web developer. Currently I'm using JavaScript, PHP and python as main programming languages for work and fun.</p>
-			</div>
-			<div class="col-lg-4 col-lg-offset-2">
-				<p>I'm a full stack web developer. Currently I'm using JavaScript, PHP and python as main programming languages for work and fun.</p>
-			</div>
-			<div class="col-lg-4">
-				<p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-			</div>
-			<div class="col-lg-8 col-lg-offset-2 text-center">
-				<a href="#" class="btn btn-lg btn-outline">
-					<i class="fa fa-download"></i> Download Me
-				</a>
-			</div>
-		</div>
-	</div>
-</section>
 
 <!-- Contact Section -->
 <section id="contact">
@@ -218,13 +264,14 @@
 							<a href="https://twitter.com/ramsondon" class="btn-social btn-outline"><span class="sr-only">Twitter</span><i class="fa fa-fw fa-twitter"></i></a>
 						</li>
 						<li>
-							<a href="https://www.linkedin.com/in/ramsondon/" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i class="fa fa-fw fa-linkedin"></i></a>
+							<a href="https://www.linkedin.com/in/ramsondon" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i class="fa fa-fw fa-linkedin"></i></a>
 						</li>
 					</ul>
 				</div>
 				<div class="footer-col col-md-4">
-					<h3>About Freelancer</h3>
-					<p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+					<h3>Thanks to</h3>
+					<p>Thanks to <a href="https://github.com">Github</a> for hosting and <a href="http://startbootstrap.com">Start Bootstrap</a> for the core theme of this page.</p>
+					<p>Also thanks to <a href="https://formspree.io">Formspree</a> for handling your contact requests!</p>
 				</div>
 			</div>
 		</div>
@@ -266,16 +313,13 @@
 						<img src="<%- model.img.src %>" class="img-responsive img-centered" alt="<%- model.img.alt %>">
 						<p><%= model.project.description %></p>
 						<ul class="list-inline item-details">
-							<li>Client:
-								<strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+							<li>Platform:
+								<strong>
+									<a href="<%- model.platform.url %>"><%- model.platform.name %></a>
 								</strong>
 							</li>
 							<li>Date:
 								<strong><%- model.project.date %></strong>
-							</li>
-							<li>Service:
-								<strong><a href="http://startbootstrap.com">Web Development</a>
-								</strong>
 							</li>
 						</ul>
 						<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
@@ -298,6 +342,7 @@
 
 <!-- Bootstrap Core JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 
 <script src="web/js/post.min.js"></script>
 

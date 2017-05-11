@@ -6,6 +6,10 @@
 		"src": "web/img/certificates/certificate_coursera_patterndiscovery.png",
 		"alt": "cake"
 	  },
+	  "platform": {
+		"url" : "https://www.coursera.org",
+		"name": "Coursera"
+	  },
 	  "project": {
 		"date": "March 2015",
 		"title": "Pattern Discovery in Data Mining",
@@ -17,6 +21,10 @@
 	  "img": {
 		"src": "web/img/certificates/certificate_coursera_textretrieval.png",
 		"alt": ""
+	  },
+	  "platform": {
+		"url" : "https://www.coursera.org",
+		"name": "Coursera"
 	  },
 	  "project": {
 		"date": "April 2015",
@@ -30,10 +38,14 @@
 		"src": "web/img/certificates/certificate_mongodb_m101p.png",
 		"alt": ""
 	  },
+	  "platform": {
+		"url" : "https://university.mongodb.com",
+		"name": "MongoDB University"
+	  },
 	  "project": {
 		"date": "October - December 2015",
 		"title": "MongoDB",
-		"description": "MongoDB for Developers at <a href=\"https://university.mongodb.com\">MongoDB University</a> earned on December 8, 2015<br/><a class=\"btn btn-success\" href=\"web/pdf/certificate_mongodb_m101p.pdf\">Show pdf</a>"
+		"description": "MongoDB for Developers at MongoDB University earned on December 8, 2015<br/><a class=\"btn btn-success\" href=\"http://education.mongodb.com/downloads/certificates/f8f676f13b1a4f7bbdf103937f16a8cf/Certificate.pdf\">Show pdf</a>"
 	  }
 	}
   ]

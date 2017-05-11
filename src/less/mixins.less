@@ -41,3 +41,16 @@
     -moz-transition: all 0.5s;
     transition: all 0.5s;
 }
+
+.background-image(@url, @color) {
+  background: @color;
+  background-image: url(@url);
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
