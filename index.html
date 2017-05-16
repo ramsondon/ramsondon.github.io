@@ -101,12 +101,12 @@
 
 
 <!-- About Section -->
-<section class="success" id="about">
+<section id="about">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 text-center">
 				<h2>About</h2>
-				<hr class="star-light">
+				<hr class="star-primary">
 			</div>
 		</div>
 		<div class="row">
@@ -128,8 +128,7 @@
 		</div>
 	</div>
 </section>
-
-
+<hr/>
 <section id="experience">
 	<div class="container">
 		<div class="row">
@@ -139,26 +138,49 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-12"><p>working experience here...</p></div>
+			<div class="col-sm-12 text-center">
+				<p>Apr 2013 - Apr 2017, xoo design gmbh</p>
+				<ul>
+					<li>Continuous Refactoring</li>
+					<li>Software Design and Architecture</li>
+					<li>Development with in-house frameworks, Symfony and Silex</li>
+					<li>Web development with LAMP stack</li>
+				</ul>
+			</div>
+			<div class="col-sm-12 text-center">
+				<p>Oct 2010 - Feb 2013, xoo design gmbh</p>
+				<ul>
+					<li>Extending and developing of new and existing applications by using the in-house framework</li>
+					<li>Web development with LAMP stack</li>
+					<li>Programming of native mobile applications</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </section>
 
-
-<section class="success" id="education">
+<hr/>
+<section id="education">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 text-center">
 				<h2>Education</h2>
-				<hr class="star-light">
+				<hr class="star-primary">
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-12"><p>education here...</p></div>
+			<div class="col-sm-12"><p>2010 - 2012 Vorarlberg University of Applied Sciences, Master's Degree in Computer Science</p></div>
+			<div class="col-sm-12"><p>2007 - 2010 Vorarlberg University of Applied Sciences, Bachelor's Degree in Computer Science</p></div>
+			<div class="col-sm-12"><p>2000 - 2005 Handelsakademie Feldkirch, Highschool focusing on economics and business</p></div>
+			<div class="col-sm-offset-4 col-sm-4">
+				<a href="http://www.fhv.at/">
+					<img class="img-centered img-responsive" src="web/img/edu/fh_vorarlberg.png"/>
+				</a>
+			</div>
 		</div>
 	</div>
 </section>
-
+<hr/>
 <!-- Portfolio Grid Section -->
 <section id="portfolio">
 	<div class="container">
@@ -185,23 +207,29 @@
 	</div>
 </section>
 
+<hr/>
 
 
-
-<section class="success" id="skills">
+<section id="skills">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 text-center">
 				<h2>Skills</h2>
-				<hr class="star-light">
+				<hr class="star-primary">
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-12"><p>skills here...</p></div>
+			<script id="skill-item-template" type="text/x-template">
+				<div class="col-xs-4 col-sm-2 skill-item">
+					<a href="<%- model.url %>">
+						<img src="<%- model.img.src %>" class="img-responsive" alt="<%- model.img.title %>" title="<%- model.img.title %>">
+					</a>
+				</div>
+			</script>
 		</div>
 	</div>
 </section>
-
+<hr/>
 <!-- Contact Section -->
 <section id="contact">
 	<div class="container">
