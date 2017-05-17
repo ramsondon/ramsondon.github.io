@@ -563,5 +563,6 @@ div#maincontent {
   outline: none;
 }
 .skill-item img {
+  max-height: 150px;
   margin: 5px;
 }
