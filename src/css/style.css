@@ -562,7 +562,9 @@ fieldset[disabled] .btn-success.active {
 div#maincontent {
   outline: none;
 }
+.skill-item {
+  height: 200px;
+}
 .skill-item img {
-  max-height: 150px;
   margin: 5px;
 }
