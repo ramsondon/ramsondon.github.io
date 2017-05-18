@@ -5,7 +5,8 @@
 	{"url": "https://gruntjs.com/", "img": { "src" : "web/img/tec/grunt.png", "title": "grunt"}},
 	{"url": "http://gulpjs.com/", "img": { "src" : "web/img/tec/gulp.png", "title": "gulp"}},
 	{"url": "https://www.w3schools.com/html/html5_intro.asp", "img": { "src" : "web/img/tec/html5.png", "title": "html5"}},
-	{"url": "https://www.jetbrains.com/idea/", "img": { "src" : "web/img/tec/intellij.jpg", "title": "intellij"}},
+	{"url": "https://www.jetbrains.com/phpstorm/", "img": { "src" : "web/img/tec/pstorm.png", "title": "phpstorm"}},
+	{"url": "https://www.jetbrains.com/pycharm/", "img": { "src" : "web/img/tec/pycharm.png", "title": "pycharm"}},
 	{"url": "https://www.javascript.com/", "img": { "src" : "web/img/tec/javascript.svg", "title": "javascript"}},
 	{"url": "https://www.mongodb.com/", "img": { "src" : "web/img/tec/mongodb.png", "title": "mongodb"}},
 	{"url": "https://www.mysql.com", "img": { "src" : "web/img/tec/mysql.png", "title": "mysql"}},
@@ -13,6 +14,7 @@
 	{"url": "https://www.python.org/", "img": { "src" : "web/img/tec/python.jpg", "title": "python"}},
 	{"url": "http://sass-lang.com/", "img": { "src" : "web/img/tec/sass.svg", "title": "sass"}},
 	{"url": "https://symfony.com/", "img": { "src" : "web/img/tec/symfony.png", "title": "symfony"}},
-	{"url": "https://nodejs.org/", "img": { "src" : "web/img/tec/nodejs.png", "title": "nodejs"}}
+	{"url": "https://nodejs.org/", "img": { "src" : "web/img/tec/nodejs.png", "title": "nodejs"}},
+	{"url": "https://getfedora.org/", "img": { "src" : "web/img/tec/fedora.png", "title": "fedora"}}
   ]
 }

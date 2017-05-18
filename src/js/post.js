@@ -33,6 +33,7 @@
 
 	_get('web/data/tech.json', function(items) {
 		var tpl_post= $('#skill-item-template');
+		items = items.shuffle();
 		for (var i=0; i < items.length; i++) {
 			render(tpl_post, { model : items[i] });
 		}
