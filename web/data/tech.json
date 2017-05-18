@@ -15,6 +15,8 @@
 	{"url": "http://sass-lang.com/", "img": { "src" : "web/img/tec/sass.svg", "title": "sass"}},
 	{"url": "https://symfony.com/", "img": { "src" : "web/img/tec/symfony.png", "title": "symfony"}},
 	{"url": "https://nodejs.org/", "img": { "src" : "web/img/tec/nodejs.png", "title": "nodejs"}},
-	{"url": "https://getfedora.org/", "img": { "src" : "web/img/tec/fedora.png", "title": "fedora"}}
+	{"url": "https://getfedora.org/", "img": { "src" : "web/img/tec/fedora.png", "title": "fedora"}},
+	{"url": "https://arduino.cc/", "img": { "src" : "web/img/tec/arduino.png", "title": "arduino"}},
+	{"url": "https://android.com/", "img": { "src" : "web/img/tec/android.png", "title": "android"}}
   ]
 }

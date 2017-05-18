@@ -34,8 +34,15 @@
 	_get('web/data/tech.json', function(items) {
 		var tpl_post= $('#skill-item-template');
 		items = items.shuffle();
+		var c = "visible-sm visible-md visible-lg";
+		var tmp = "";
 		for (var i=0; i < items.length; i++) {
 			render(tpl_post, { model : items[i] });
+
+			if ((i+1) % 3  == 0) {
+				tmp = ((i+1) % 6 == 0 ? c : "");
+				tpl_post.after('<div class="clearfix visible-xs '+ tmp +'"></div>');
+			}
 		}
 	});
 
