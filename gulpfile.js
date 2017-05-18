@@ -92,7 +92,7 @@ gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js'], function() 
     gulp.watch('src/less/*.less', ['less']);
     gulp.watch('src/css/*.css', ['minify-css']);
     gulp.watch('src/js/*.js', ['minify-js']);
-    gulp.watch('web/data/posts.json');
+    gulp.watch('web/data/**/*.json');
     // Reloads the browser whenever HTML or JS files change
     gulp.watch('*.html', browserSync.reload);
     gulp.watch('web/js/**/*.js', browserSync.reload);
