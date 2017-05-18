@@ -12,6 +12,7 @@
 	{"url": "http://php.net/", "img": { "src" : "web/img/tec/php.svg", "title": "php"}},
 	{"url": "https://www.python.org/", "img": { "src" : "web/img/tec/python.jpg", "title": "python"}},
 	{"url": "http://sass-lang.com/", "img": { "src" : "web/img/tec/sass.svg", "title": "sass"}},
-	{"url": "https://symfony.com/", "img": { "src" : "web/img/tec/symfony.png", "title": "symfony"}}
+	{"url": "https://symfony.com/", "img": { "src" : "web/img/tec/symfony.png", "title": "symfony"}},
+	{"url": "https://nodejs.org/", "img": { "src" : "web/img/tec/nodejs.png", "title": "nodejs"}}
   ]
 }
