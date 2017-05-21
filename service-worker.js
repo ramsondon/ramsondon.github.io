@@ -1,0 +1,3 @@
+/**
+ * ngx service-worker.js
+ */
