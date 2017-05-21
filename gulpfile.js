@@ -13,7 +13,7 @@ var pkg = require('./package.json');
 var banner = ['/*!\n',
     ' * ramsondon.github.io - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
     ' * Copyright 2017 -' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
-    ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n',
+    ' * Licensed under <%= pkg.license %>\n',
     ' */\n',
     ''
 ].join('');
