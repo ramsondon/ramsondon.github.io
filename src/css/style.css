@@ -1,7 +1,7 @@
 /*!
  * ramsondon.github.io - ramsondon.github.io v1.0.0 (https://ramsondon.github.io)
  * Copyright 2017 -2017 Matthias Schmid
- * Licensed under  ()
+ * Licensed under  (MIT)
  */
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -240,17 +240,17 @@ section.success {
   /* Opera */
   transform: scale(1.1);
 }
-#portfolio .portfolio-item {
+#certificates .portfolio-item {
   margin: 0 0 15px;
   right: 0;
 }
-#portfolio .portfolio-item .portfolio-link {
+#certificates .portfolio-item .portfolio-link {
   display: block;
   position: relative;
   max-width: 400px;
   margin: 0 auto;
 }
-#portfolio .portfolio-item .portfolio-link .caption {
+#certificates .portfolio-item .portfolio-link .caption {
   background: rgba(23, 132, 199, 0.9);
   position: absolute;
   width: 100%;
@@ -260,10 +260,10 @@ section.success {
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
 }
-#portfolio .portfolio-item .portfolio-link .caption:hover {
+#certificates .portfolio-item .portfolio-link .caption:hover {
   opacity: 1;
 }
-#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+#certificates .portfolio-item .portfolio-link .caption .caption-content {
   position: absolute;
   width: 100%;
   height: 20px;
@@ -273,14 +273,14 @@ section.success {
   margin-top: -12px;
   color: white;
 }
-#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+#certificates .portfolio-item .portfolio-link .caption .caption-content i {
   margin-top: -12px;
 }
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+#certificates .portfolio-item .portfolio-link .caption .caption-content h3,
+#certificates .portfolio-item .portfolio-link .caption .caption-content h4 {
   margin: 0;
 }
-#portfolio * {
+#certificates * {
   z-index: 2;
 }
 @media (min-width: 767px) {
