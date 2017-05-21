@@ -1,0 +1,4 @@
+<% _.forEach(ngxModel.sections, function(section) { %>
+	<ngx-include x-template="html/section.tpl.html" x-provide="<%- _.ngxAssign(section) %>" x-type="local"></ngx-include>
+	<hr/>
+<% }); %>

@@ -1,0 +1,11 @@
+<section id="<%- ngxModel.id %>">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2><%- ngxModel.title %></h2>
+				<hr class="star-primary">
+			</div>
+		</div>
+		<ngx-include x-template="<%= ngxModel.template %>" x-provide="<%- _.ngx.assign(ngxModel) %>" x-type="local" x-tplready="<%- ngxModel.id %>"></ngx-include>
+	</div>
+</section>
