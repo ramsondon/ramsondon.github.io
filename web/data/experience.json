@@ -1,0 +1,39 @@
+{
+  "items": [
+	{
+	  "title": "Parental Leave",
+	  "label" : "Apr 2017 - Present",
+	  "content" : ""
+	},
+	{
+	  "title": "xoo design gmbh",
+	  "label" : "Apr 2013 - Apr 2017",
+	  "content" : "<ul><li>Continuous Refactoring</li><li>Software Design and Architecture</li><li>Development with in-house frameworks, Symfony and Silex</li><li>Web development with LAMP stack</li></ul>"
+	},
+	{
+	  "title": "StyleAddicted AG",
+	  "label" : "Apr - Jun 2016",
+	  "content" : "<ul><li>Implementation of an Instagram API as SAAS in python by using the django rest framework.</li><li>Automatic fetching and analysis of Instagram user data with in a multi threaded environment using celery and redis.</li></ul>"
+	},
+	{
+	  "title": "Montoya Gourment Gmbh",
+	  "label" : "Aug 2014",
+	  "content" : "Development (Configuration) of a WordPress Website with WooCommerce Webshop."
+	},
+	{
+	  "title": "Autohaus Günter Schmid",
+	  "label" : "Apr - May 2013",
+	  "content" : "Development of a realtime Taskbook with ASP.NET framework for handling daily customer's orders."
+	},
+	{
+	  "title": "Stahlmanufaktur Gmbh",
+	  "label" : "Apr - Okt 2011",
+	  "content" : "Development of another tiny CMS and Website with PHP and Symfony 2.0."
+	},
+	{
+	  "title": "xoo design gmbh",
+	  "label" : "Oct 2010 - Feb 2013",
+	  "content" : "<ul><li>Extending and developing of new and existing applications by using the in-house framework</li><li>Web development with LAMP stack</li><li>Programming of native mobile applications</li></ul>"
+	}
+  ]
+}
