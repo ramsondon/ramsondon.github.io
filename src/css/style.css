@@ -245,6 +245,7 @@ section.success {
   right: 0;
 }
 #certificates .portfolio-item .portfolio-link {
+  border: 3px solid #B3B4B5;
   display: block;
   position: relative;
   max-width: 400px;
@@ -498,6 +499,9 @@ fieldset[disabled] .btn-success.active {
 }
 .portfolio-modal .modal-content .item-details {
   margin: 30px 0;
+}
+.portfolio-modal .modal-content .modal-body img {
+  border: 3px solid #B3B4B5;
 }
 .portfolio-modal .close-modal {
   position: absolute;
