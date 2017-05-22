@@ -1,11 +1,11 @@
 <div class="row">
 	<% _.forEach(ngxModel.items, function(item) { %>
 	<div class="col-sm-offset-2 col-sm-8">
+		<div class="col-sm-4"><%- item.label %></div>
 		<div class="col-sm-8">
 			<p><%- item.title %></p>
 			<%= item.content %>
 		</div>
-		<div class="col-sm-4 text-left"><%- item.label %></div>
 	</div>
 	<% }); %>
 </div>

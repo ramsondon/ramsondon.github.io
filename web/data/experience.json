@@ -12,22 +12,22 @@
 	},
 	{
 	  "title": "StyleAddicted AG",
-	  "label" : "Apr - Jun 2016",
+	  "label" : "Apr 2016 - Jun 2016",
 	  "content" : "<ul><li>Implementation of an Instagram API as SAAS in python by using the django rest framework.</li><li>Automatic fetching and analysis of Instagram user data with in a multi threaded environment using celery and redis.</li></ul>"
 	},
 	{
 	  "title": "Montoya Gourment Gmbh",
-	  "label" : "Aug 2014",
+	  "label" : "Jul 2014 - Aug 2014",
 	  "content" : "Development (Configuration) of a WordPress Website with WooCommerce Webshop."
 	},
 	{
 	  "title": "Autohaus Günter Schmid",
-	  "label" : "Apr - May 2013",
+	  "label" : "Apr 2013 - May 2013",
 	  "content" : "Development of a realtime Taskbook with ASP.NET framework for handling daily customer's orders."
 	},
 	{
 	  "title": "Stahlmanufaktur Gmbh",
-	  "label" : "Apr - Okt 2011",
+	  "label" : "Apr 2011 - Okt 2011",
 	  "content" : "Development of another tiny CMS and Website with PHP and Symfony 2.0."
 	},
 	{

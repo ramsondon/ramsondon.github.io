@@ -1,0 +1,19 @@
+{
+  "items": [
+	{
+	  "title": "Vorarlberg University of Applied Sciences",
+	  "label": "Sept 2010 - Okt 2012",
+	  "content": "Master's Degree in Computer Science"
+	},
+	{
+	  "title": "Vorarlberg University of Applied Sciences",
+	  "label": "Sept 2007 - Okt 2010",
+	  "content": "Bachelor's Degree in Computer Science"
+	},
+	{
+	  "title": " Handelsakademie Feldkirch",
+	  "label": "Sept 2000 - Jul 2005",
+	  "content": "Highschool focusing on economics and business"
+	}
+  ]
+}
