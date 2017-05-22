@@ -59,7 +59,7 @@ _.ngx = function () {
 				if (t > 0 && cached_file in this.tpl_cache) {
 					clearTimeout(t);
 					t = 0;
-					console.log('get cached: ', cached_file);
+					//console.log('get cached: ', cached_file);
 					render(this.tpl_cache[cached_file]);
 				} else {
 					t = setTimeout(poll);
@@ -70,8 +70,7 @@ _.ngx = function () {
 		} else {
 			this.tpl_cache_mark[cached_file] = filepath;
 			this.get(filepath, 'text', function(html) {
-				console.log('get remote: ', cached_file);
-
+				//console.log('get remote: ', cached_file);
 				this.tpl_cache[cached_file] = html;
 				render(html);
 			}.bind(this));
@@ -144,7 +143,7 @@ _.ngx = function () {
 	};
 
 	ngx.prototype.require = function (src, callback) {
-		(function(d, s, src) {
+		return (function(d, s, src) {
 			var id = src.replace(new RegExp('[\/\.:]', 'g'), '_');
 			var js, fjs = d.getElementsByTagName(s)[0];
 			if (d.getElementById(id)) return;

@@ -67,7 +67,6 @@
                 _.ngx.require("https://buttons.github.io/buttons.js");
 			},
             "contact": function () {
-                _.ngx.require("web/js/jqBootstrapValidation.min.js");
                 _.ngx.require("web/js/contact.min.js");
                 initContact();
 			}
