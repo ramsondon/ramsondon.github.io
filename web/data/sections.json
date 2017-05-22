@@ -3,32 +3,44 @@
 	{
 	  "id": "about",
 	  "title": "About",
-	  "template": "html/sections/about.tpl.html"
+	  "menu": "Me",
+	  "template": "html/sections/about.tpl.html",
+	  "class": "primary"
 	},
 	{
 	  "id": "experience",
 	  "title": "Experience",
-	  "template": "html/sections/experience.tpl.html"
+	  "menu": "Exp",
+	  "template": "html/sections/experience.tpl.html",
+	  "class" : "success"
 	},
 	{
 	  "id": "education",
 	  "title": "Education",
-	  "template": "html/sections/education.tpl.html"
+	  "menu": "Edu",
+	  "template": "html/sections/education.tpl.html",
+	  "class": "primary"
 	},
 	{
 	  "id": "certificates",
 	  "title": "Certificates",
-	  "template": "html/sections/certificates.tpl.html"
+	  "menu": "crt",
+	  "template": "html/sections/certificates.tpl.html",
+	  "class": "info"
 	},
 	{
 	  "id": "skills",
 	  "title": "Skills",
-	  "template": "html/sections/skills.tpl.html"
+	  "menu": "SKL",
+	  "template": "html/sections/skills.tpl.html",
+	  "class": "primary"
 	},
 	{
 	  "id": "contact",
 	  "title": "Contact me",
-	  "template": "html/sections/contact.tpl.html"
+	  "menu": "CTC",
+	  "template": "html/sections/contact.tpl.html",
+	  "class": "primary"
 	}
   ]
 }

@@ -7,7 +7,7 @@
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 				<span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
 			</button>
-			<img class="navbar-img img-circle img-responsive" src="web/img/matthias.jpg" alt="">
+			<!--<img class="navbar-img img-circle img-responsive" src="web/img/matthias2.jpg" alt="">-->
 			<a class="navbar-brand" href="#page-top">
 				ramsondon.github.io
 			</a>
@@ -21,7 +21,7 @@
 				</li>
 				<% _.forEach(ngxModel.sections, function(section) { %>
 					<li class="page-scroll">
-						<a href="#<%- section.id %>"><%- section.title %></a>
+						<a href="#<%- section.id %>" title="<%- section.title %>"><%- section.menu %></a>
 					</li>
 				<% }); %>
 			</ul>
