@@ -18,7 +18,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #1784c7;
+  color: #52BC50;
   outline: none;
 }
 h1,
@@ -31,7 +31,9 @@ h6 {
   text-transform: uppercase;
   font-weight: 700;
 }
-hr.star-light,
+hr.star-info,
+hr.star-warning,
+hr.star-success,
 hr.star-primary {
   padding: 0;
   border: none;
@@ -40,7 +42,9 @@ hr.star-primary {
   max-width: 250px;
   margin: 25px auto 30px;
 }
-hr.star-light:after,
+hr.star-warning:after,
+hr.star-info:after,
+hr.star-success:after,
 hr.star-primary:after {
   content: "\f005";
   font-family: FontAwesome;
@@ -50,11 +54,25 @@ hr.star-primary:after {
   font-size: 2em;
   padding: 0 0.25em;
 }
-hr.star-light {
+hr.star-warning {
+  border-color: #373737;
+}
+hr.star-warning:after {
+  background-color: #FCD061;
+  color: #373737;
+}
+hr.star-info {
   border-color: white;
 }
-hr.star-light:after {
-  background-color: #1784c7;
+hr.star-info:after {
+  background-color: #5C9EA4;
+  color: white;
+}
+hr.star-success {
+  border-color: white;
+}
+hr.star-success:after {
+  background-color: #52BC50;
   color: white;
 }
 hr.star-primary {
@@ -67,11 +85,18 @@ hr.star-primary:after {
 .img-centered {
   margin: 0 auto;
 }
+.body-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
 header {
   text-align: center;
-  background: #1784c7;
-  background-image: url("..\/img\/bg.jpg");
-  background-image: url();
+  background: #52BC50;
+  background-image: url("..\/img\/body-bg7.jpeg");
   background-repeat: no-repeat;
   background-position: 50% 0;
   -ms-background-size: cover;
@@ -79,7 +104,7 @@ header {
   -moz-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
-  color: white;
+  color: #373737;
 }
 header .container {
   padding-top: 100px;
@@ -88,6 +113,10 @@ header .container {
 header img {
   display: block;
   margin: 0 auto 20px;
+}
+header .intro-text span {
+  background-color: #52BC50;
+  padding: 0 5px 0 5px;
 }
 header .intro-text .name {
   display: block;
@@ -143,7 +172,7 @@ header .intro-text .skills {
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #1784c7;
+  color: #52BC50;
 }
 .navbar-custom .navbar-nav li a:focus,
 .navbar-custom .navbar-nav li a:active {
@@ -151,13 +180,13 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-nav li.active a {
   color: white;
-  background: #1784c7;
+  background: #52BC50;
 }
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
   color: white;
-  background: #1784c7;
+  background: #52BC50;
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -167,9 +196,9 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #1784c7;
+  background-color: #52BC50;
   color: white;
-  border-color: #1784c7;
+  border-color: #52BC50;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -199,8 +228,15 @@ section h2 {
   font-size: 3em;
 }
 section.success {
-  background: #1784c7;
+  background: #52BC50;
   color: white;
+}
+section.info {
+  background-color: #5C9EA4;
+  color: white;
+}
+section.warning {
+  background-color: #FCD061;
 }
 @media (max-width: 767px) {
   section {
@@ -245,6 +281,7 @@ section.success {
   right: 0;
 }
 #certificates .portfolio-item .portfolio-link {
+  background-color: white;
   border: 3px solid #B3B4B5;
   display: block;
   position: relative;
@@ -252,7 +289,7 @@ section.success {
   margin: 0 auto;
 }
 #certificates .portfolio-item .portfolio-link .caption {
-  background: rgba(23, 132, 199, 0.9);
+  background: rgba(82, 188, 80, 0.9);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -333,7 +370,7 @@ section.success {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #1784c7;
+  color: #52BC50;
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
@@ -367,7 +404,7 @@ footer .footer-below {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-  color: #1784c7;
+  color: #52BC50;
   background: white;
   border: solid 2px white;
 }
@@ -415,8 +452,8 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-success {
   color: white;
-  background-color: #1784c7;
-  border-color: #1784c7;
+  background-color: #52BC50;
+  border-color: #52BC50;
   font-weight: 700;
 }
 .btn-success:hover,
@@ -425,8 +462,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-success.active,
 .open .dropdown-toggle.btn-success {
   color: white;
-  background-color: #126699;
-  border-color: #116090;
+  background-color: #3e9d3c;
+  border-color: #3b9639;
 }
 .btn-success:active,
 .btn-success.active,
@@ -448,11 +485,11 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-  background-color: #1784c7;
-  border-color: #1784c7;
+  background-color: #52BC50;
+  border-color: #52BC50;
 }
 .btn-success .badge {
-  color: #1784c7;
+  color: #52BC50;
   background-color: white;
 }
 .btn-social {
@@ -559,7 +596,7 @@ fieldset[disabled] .btn-success.active {
   position: absolute;
   left: 0px;
   top: 0px;
-  background: #1784c7;
+  background: #52BC50;
   outline: 0;
   transition: top 0.1s ease-in, background 0.5s linear;
 }

@@ -42,15 +42,14 @@
     transition: all 0.5s;
 }
 
-.background-image(@url, @color) {
+.background-image(@url, @color, @size:cover) {
   background: @color;
   background-image: url(@url);
-  background-image: url();
   background-repeat: no-repeat;
   background-position: 50% 0;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
+  -ms-background-size: @size;
+  -o-background-size: @size;
+  -moz-background-size: @size;
+  -webkit-background-size: @size;
+  background-size: @size;
 }
