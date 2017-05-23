@@ -34,6 +34,11 @@
 	  "title": "xoo design gmbh",
 	  "label" : "Oct 2010 - Feb 2013",
 	  "content" : "<ul><li>Extending and developing of new and existing applications by using the in-house framework</li><li>Web development with LAMP stack</li><li>Programming of native mobile applications</li></ul>"
+	},
+	{
+	  "title": "Internship at Vrz Informatik GmbH CC-Solution",
+	  "label" : "Feb 2010 - Apr 2010",
+	  "content" : "<ul><li>Extension of an Enterprise Architect® Addin for internal usage. (UML, Graph-Traversal, Webservices) in C#</li><li>Implementation of a RoutingAgent for Exchange Server 2010 in C# and PowerShell Script</li><li>Development of a number to word engine for german language in C#</li></ul>"
 	}
   ]
 }

@@ -2,17 +2,27 @@
   "items": [
 	{
 	  "title": "Vorarlberg University of Applied Sciences",
-	  "label": "Sept 2010 - Okt 2012",
+	  "label": "Sep 2010 - Okt 2012",
 	  "content": "Master's Degree in Computer Science"
 	},
 	{
+	  "title": "IP S-Games 2012 in Amsterdam",
+	  "label": "Mar 2012",
+	  "content": "Serious games on safety procedures on industrial plants. Implementation of a rapid prototype"
+	},
+	{
+	  "title": "Universidad Politécnica de Valencia",
+	  "label": "Sep 2009 - Feb 2010",
+	  "content": "I studied a single semester in Spain at the Escuela Técnica Superior de Ingeniería Informática."
+	},
+	{
 	  "title": "Vorarlberg University of Applied Sciences",
-	  "label": "Sept 2007 - Okt 2010",
+	  "label": "Sep 2007 - Okt 2010",
 	  "content": "Bachelor's Degree in Computer Science"
 	},
 	{
 	  "title": " Handelsakademie Feldkirch",
-	  "label": "Sept 2000 - Jul 2005",
+	  "label": "Sep 2000 - Jul 2005",
 	  "content": "Highschool focusing on economics and business"
 	}
   ]
