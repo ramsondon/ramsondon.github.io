@@ -3,27 +3,32 @@
 	{
 	  "title": "Vorarlberg University of Applied Sciences",
 	  "label": "Sep 2010 - Okt 2012",
-	  "content": "Master's Degree in Computer Science"
+	  "content": "Master's Degree in Computer Science<br/>Thesis: \"Mobile encryption proxy\"",
+	  "listings": []
 	},
 	{
 	  "title": "IP S-Games 2012 in Amsterdam",
 	  "label": "Mar 2012",
-	  "content": "Serious games on safety procedures on industrial plants. Implementation of a rapid prototype"
+	  "content": "Serious games on safety procedures on industrial plants. Implementation of a rapid prototype",
+	  "listings": []
 	},
 	{
 	  "title": "Universidad Politécnica de Valencia",
 	  "label": "Sep 2009 - Feb 2010",
-	  "content": "I studied a single semester in Spain at the Escuela Técnica Superior de Ingeniería Informática."
+	  "content": "Erasmus program in Spain at the Escuela Técnica Superior de Ingeniería Informática.",
+	  "listings": []
 	},
 	{
 	  "title": "Vorarlberg University of Applied Sciences",
 	  "label": "Sep 2007 - Okt 2010",
-	  "content": "Bachelor's Degree in Computer Science"
+	  "content": "Bachelor's Degree in Computer Science<br/>Thesis: \"Fuzzy Databases\"",
+	  "listings": []
 	},
 	{
 	  "title": " Handelsakademie Feldkirch",
 	  "label": "Sep 2000 - Jul 2005",
-	  "content": "Highschool focusing on economics and business"
+	  "content": "Highschool focusing on economics and business",
+	  "listings": []
 	}
   ]
 }

@@ -3,42 +3,81 @@
 	{
 	  "title": "Parental Leave",
 	  "label" : "Apr 2017 - Present",
-	  "content" : "Cooking, housekeeping, professional diaper changing"
+	  "position" : "Dad",
+	  "content": null,
+	  "listings" : [
+	  	"Cooking, housekeeping, professional diaper changing"
+	  ]
 	},
 	{
 	  "title": "xoo design gmbh",
 	  "label" : "Apr 2013 - Apr 2017",
-	  "content" : "<ul><li>Continuous Refactoring</li><li>Software Design and Architecture</li><li>Development with in-house frameworks, Symfony and Silex</li><li>Web development with LAMP stack</li></ul>"
+	  "position" : "Lead developer",
+	  "content": null,
+	  "listings" : [
+		"Project management and requirements engineering for projects in corporation with customers",
+		"Supervision of interns",
+		"Continuous Refactoring",
+		"Software Design and Architecture",
+		"Development with in-house frameworks, Symfony and Silex"
+	  ]
 	},
 	{
 	  "title": "StyleAddicted AG",
 	  "label" : "Apr 2016 - Jun 2016",
-	  "content" : "<ul><li>Implementation of an Instagram API as SAAS in python by using the django rest framework.</li><li>Automatic fetching and analysis of Instagram user data with in a multi threaded environment using celery and redis.</li></ul>"
+	  "position" : "Freelancer",
+	  "content": null,
+	  "listings" : [
+		"Implementation of an Instagram API as SAAS in python by using the django rest framework.",
+		"Automatic fetching and analysis of Instagram user data with in a multi threaded environment using celery and redis."
+	  ]
 	},
 	{
-	  "title": "Montoya Gourment Gmbh",
+	  "title": "Montoya Gourmet Gmbh",
 	  "label" : "Jul 2014 - Aug 2014",
-	  "content" : "Development (Configuration) of a WordPress Website with WooCommerce Webshop."
+	  "position" : "Freelancer",
+	  "content": null,
+	  "listings" : [
+		"Development (Configuration) of a WordPress Website with WooCommerce Webshop."
+	  ]
 	},
 	{
 	  "title": "Autohaus Günter Schmid",
 	  "label" : "Apr 2013 - May 2013",
-	  "content" : "Development of a realtime Taskbook with ASP.NET framework for handling daily customer's orders."
+	  "position" : "Freelancer",
+	  "listings" : [
+		"Development of a real time application for handling daily orders of customers of a car service station with the ASP.NET framework and MS Sql Server in C#"
+	  ]
 	},
 	{
 	  "title": "Stahlmanufaktur Gmbh",
 	  "label" : "Apr 2011 - Okt 2011",
-	  "content" : "Development of another tiny CMS and Website with PHP and Symfony 2.0."
+	  "position" : "Freelancer",
+	  "content": null,
+	  "listings" : [
+		"Development of another tiny CMS and Website with PHP and Symfony 2.0."
+	  ]
 	},
 	{
 	  "title": "xoo design gmbh",
 	  "label" : "Oct 2010 - Feb 2013",
-	  "content" : "<ul><li>Extending and developing of new and existing applications by using the in-house framework</li><li>Web development with LAMP stack</li><li>Programming of native mobile applications</li></ul>"
+	  "position" : "Junior Developer",
+	  "content": null,
+	  "listings" : [
+		"Extending and developing of new and existing applications by using the in-house framework",
+		"Programming of native android applications"
+	  ]
 	},
 	{
 	  "title": "Internship at Vrz Informatik GmbH CC-Solution",
 	  "label" : "Feb 2010 - Apr 2010",
-	  "content" : "<ul><li>Extension of an Enterprise Architect® Addin for internal usage. (UML, Graph-Traversal, Webservices) in C#</li><li>Implementation of a RoutingAgent for Exchange Server 2010 in C# and PowerShell Script</li><li>Development of a number to word engine for german language in C#</li></ul>"
+	  "position" : "Intern",
+	  "content": null,
+	  "listings" : [
+		"Extension of an Enterprise Architect® Addin for internal usage. (UML, Graph-Traversal, Webservices) in C#",
+		"Implementation of a RoutingAgent for Exchange Server 2010 in C# and PowerShell Script",
+		"Development of a number to word engine for german language in C#"
+	  ]
 	}
   ]
 }
