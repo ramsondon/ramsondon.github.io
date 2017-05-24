@@ -9,13 +9,12 @@
 				<strong class="text-italic">as <%- item.position %></strong>
 			</p>
 			<% } %>
-			<p><%= _.ngx.nl2br(item.content) %></p>
+			<p class="small"><%= _.ngx.nl2br(item.content) %></p>
 			<ul>
 			<% _.forEach(item.listings, function (listing) { %>
 				<li><%- listing %></li>
 			<% }); %>
 			</ul>
-
 		</div>
 	</div>
 	<% }); %>
