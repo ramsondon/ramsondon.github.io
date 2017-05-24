@@ -41,7 +41,7 @@
 	  "menu": "LNG",
 	  "template": "html/sections/languages.tpl.html",
 	  "model": "data/languages.json",
-	  "class": "warning"
+	  "class": "danger"
 	},
 	{
 	  "id": "contact",

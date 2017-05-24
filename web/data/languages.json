@@ -22,7 +22,7 @@
 	  "label": "French",
 	  "text": "survival skills",
 	  "percentage": 45,
-	  "class": "danger"
+	  "class": "warning"
 	}
   ]
 }
