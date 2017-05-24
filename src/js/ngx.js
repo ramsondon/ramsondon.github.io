@@ -79,8 +79,7 @@ _.ngx = function () {
 
 	ngx.prototype.parseInclude = function (el) {
 		return {
-			type: el.getAttribute('x-type'),
-			provider: el.getAttribute('x-provide'),
+			model: el.getAttribute('x-model'),
 			template: el.getAttribute('x-template'),
 			listener: el.getAttribute('x-tplready')
 		}
@@ -89,23 +88,24 @@ _.ngx = function () {
 	ngx.prototype.include = function(includes) {
 		var _render = function (directive, model, $cur) {
 			this.render(directive.template, {
-				ngxApp: {},
 				ngxModel: model
 			}, $cur, directive.listener);
 		}.bind(this);
 
 		_.forEach(includes, function($cur, idx) {
 			var directive = this.parseInclude($cur);
-			if (directive.type === 'remote' && directive.provider) {
-				this.get(directive.provider, 'json', function(model) {
-					_render(directive, model, $cur);
-				}.bind(this));
-			} else if (directive.type === 'local' && directive.provider) {
-				_render(directive, this.readAssignment(directive.provider), $cur);
-			} else if (directive.type === 'none') {
-				_render(directive, null, $cur);
+			if (directive.model) {
+				// check if we assigned a json object
+				try {
+					_render(directive, this.readAssignment(directive.model), $cur);
+				} catch (e) {
+				// should be a relative or absolute URI
+					this.get(directive.model, 'json', function(model) {
+						_render(directive, model, $cur);
+					}.bind(this));
+				}
 			} else {
-				console.warn('directive incomplete', directive, $cur);
+				_render(directive, null, $cur);
 			}
 
 		}.bind(this));

@@ -5,7 +5,7 @@
 			<p class=""><%- item.label %>&nbsp;<%- item.text %></p>
 		</div>
 		<div class="col-xs-8 col-sm-6">
-			<ngx-include x-template="html/items/bar.tpl.html" x-provide="<%- _.ngx.assign(item) %>" x-type="local"></ngx-include>
+			<ngx-include x-template="html/items/bar.tpl.html" x-model="<%- _.ngx.assign(item) %>"></ngx-include>
 		</div>
 		<div class="col-xs-4 col-sm-3">
 			<p class=""><%- item.percentage %>%</p>

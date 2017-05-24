@@ -44,11 +44,11 @@
 <div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
 
 <ngx-app>
-	<ngx-include x-template="html/nav.tpl.html" x-provide="data/sections.json" x-type="remote" x-tplready="mainnav"></ngx-include>
-	<ngx-include x-template="html/header.tpl.html" x-provide="" x-type="none"></ngx-include>
-	<ngx-include x-template="html/sections.tpl.html" x-provide="data/sections.json" x-type="remote"></ngx-include>
-	<ngx-include x-template="html/footer.tpl.html" x-provide="" x-type="none"></ngx-include>
-	<ngx-include x-template="html/popups.tpl.html" x-provide="data/posts.json" x-type="remote"></ngx-include>
+	<ngx-include x-template="html/nav.tpl.html" x-model="data/sections.json" x-tplready="mainnav"></ngx-include>
+	<ngx-include x-template="html/header.tpl.html"></ngx-include>
+	<ngx-include x-template="html/sections.tpl.html" x-model="data/sections.json"></ngx-include>
+	<ngx-include x-template="html/footer.tpl.html"></ngx-include>
+	<ngx-include x-template="html/popups.tpl.html" x-model="data/certificates.json"></ngx-include>
 </ngx-app>
 
 <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
