@@ -14,13 +14,13 @@
 	},
 	{
 	  "label": "Spanish",
-	  "text": "good / fluently",
+	  "text": "more or less fluently",
 	  "percentage": 70,
 	  "class": "info"
 	},
 	{
 	  "label": "French",
-	  "text": "survivor",
+	  "text": "survival skills",
 	  "percentage": 45,
 	  "class": "danger"
 	}
