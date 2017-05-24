@@ -10,7 +10,7 @@ if ('registerElement' in document) {
 _.ngx = function () {
 
 	var ngx = function () {
-		this.base_dir = '';
+		this.base_route = '';
 		this.tpl_cache = {};
 		this.tpl_cache_mark = {};
 		this.ready_listeners = {};
@@ -18,7 +18,7 @@ _.ngx = function () {
 
 	ngx.prototype.get = function(resource, type, cb) {
 
-		var url = this.base_dir + resource;
+		var url = this.base_route + resource;
 		fetch(url, {
 			method: 'GET'
 		}).then(function(response) {
@@ -59,7 +59,6 @@ _.ngx = function () {
 				if (t > 0 && cached_file in this.tpl_cache) {
 					clearTimeout(t);
 					t = 0;
-					//console.log('get cached: ', cached_file);
 					render(this.tpl_cache[cached_file]);
 				} else {
 					t = setTimeout(poll);
@@ -70,7 +69,6 @@ _.ngx = function () {
 		} else {
 			this.tpl_cache_mark[cached_file] = filepath;
 			this.get(filepath, 'text', function(html) {
-				//console.log('get remote: ', cached_file);
 				this.tpl_cache[cached_file] = html;
 				render(html);
 			}.bind(this));
@@ -140,8 +138,8 @@ _.ngx = function () {
 		}.bind(this));
 	};
 
-	ngx.prototype.basedir = function(base_dir) {
-		this.base_dir = base_dir;
+	ngx.prototype.base = function(base_dir) {
+		this.base_route = base_dir;
 		return this;
 	};
 

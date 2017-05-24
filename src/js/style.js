@@ -59,16 +59,16 @@
 
     // start template engine x
 	_.ngx
-		.basedir('web/')
+		.base('web/')
 		.xtplready({
             "mainnav": initStyle,
-            "about": function () {
-                _.ngx.require("web/js/twitter.min.js");
-                _.ngx.require("https://buttons.github.io/buttons.js");
-			},
             "contact": function () {
                 _.ngx.require("web/js/contact.min.js");
                 initContact();
+			},
+			"footer": function () {
+				_.ngx.require("web/js/twitter.min.js");
+				_.ngx.require("https://buttons.github.io/buttons.js");
 			}
         })
 		.start();
