@@ -5,7 +5,7 @@
  */
 .progress {
   height: 5px;
-  margin-top: 12px;
+  margin-top: 15px;
 }
 .progress-bar-success {
   background-color: #52BC50;
@@ -140,7 +140,7 @@ ul {
   padding-left: 20px;
 }
 ul li {
-  font-size: 16px;
+  font-size: 18px;
   outline: none;
 }
 a,
