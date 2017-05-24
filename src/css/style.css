@@ -17,7 +17,7 @@
   background-color: #FCD061;
 }
 .progress-bar-danger {
-  background-color: #BB715C;
+  background-color: #DC876B;
 }
 .text-italic {
   font-style: italic;
@@ -197,7 +197,7 @@ hr.star-danger {
   border-color: white;
 }
 hr.star-danger:after {
-  background-color: #BB715C;
+  background-color: #DC876B;
   color: white;
 }
 hr.star-info {
@@ -378,7 +378,7 @@ section.warning {
   background-color: #FCD061;
 }
 section.danger {
-  background-color: #BB715C;
+  background-color: #DC876B;
   color: white;
 }
 @media (max-width: 767px) {
