@@ -1,0 +1,28 @@
+{
+  "items": [
+	{
+	  "label": "German",
+	  "text": "native speaker",
+	  "percentage": 100,
+	  "class": "success"
+	},
+	{
+	  "label": "English",
+	  "text": "fluently",
+	  "percentage": 90,
+	  "class": "success"
+	},
+	{
+	  "label": "Spanish",
+	  "text": "good / fluently",
+	  "percentage": 70,
+	  "class": "info"
+	},
+	{
+	  "label": "French",
+	  "text": "survivor",
+	  "percentage": 45,
+	  "class": "danger"
+	}
+  ]
+}

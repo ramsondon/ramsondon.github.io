@@ -30,10 +30,18 @@
 	},
 	{
 	  "id": "skills",
-	  "title": "Skills",
+	  "title": "Tech Skills",
 	  "menu": "SKL",
 	  "template": "html/sections/skills.tpl.html",
 	  "class": "primary"
+	},
+	{
+	  "id": "languages",
+	  "title": "Language Skills",
+	  "menu": "LNG",
+	  "template": "html/sections/languages.tpl.html",
+	  "model": "data/languages.json",
+	  "class": "warning"
 	},
 	{
 	  "id": "contact",

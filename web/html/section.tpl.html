@@ -6,6 +6,6 @@
 				<hr class="star-<%- ngxModel.class %>">
 			</div>
 		</div>
-		<ngx-include x-template="<%= ngxModel.template %>" x-provide="<%- _.ngx.assign(ngxModel) %>" x-type="local" x-tplready="<%- ngxModel.id %>"></ngx-include>
+		<ngx-include x-template="<%= ngxModel.template %>" x-provide="<% if (ngxModel.model) { %><%- ngxModel.model %><% } else { %><%- _.ngx.assign(ngxModel) %><% }%>" x-type="<% if (ngxModel.model) { %>remote<% } else { %>local<% }%>" x-tplready="<%- ngxModel.id %>"></ngx-include>
 	</div>
 </section>

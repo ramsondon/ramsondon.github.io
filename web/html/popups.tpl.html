@@ -1,3 +1,3 @@
 <% _.forEach(ngxModel.items, function(model) {  %>
-	<ngx-include x-template="html/items/item-popup.tpl.html" x-provide="<%- _.ngxAssign(model) %>" x-type="local"></ngx-include>
+	<ngx-include x-template="html/items/item-popup.tpl.html" x-provide="<%- _.ngx.assign(model) %>" x-type="local"></ngx-include>
 <% }); %>

@@ -183,9 +183,6 @@ _.ngx = function () {
 	return new ngx;
 }();
 
-_.ngxAssign = function(model) {
-	return _.ngx.assign(model);
-};
 
 
 
