@@ -164,6 +164,7 @@ h6 {
 hr.star-info,
 hr.star-warning,
 hr.star-success,
+hr.star-danger,
 hr.star-primary {
   padding: 0;
   border: none;
@@ -175,6 +176,7 @@ hr.star-primary {
 hr.star-warning:after,
 hr.star-info:after,
 hr.star-success:after,
+hr.star-danger:after,
 hr.star-primary:after {
   content: "\f005";
   font-family: FontAwesome;
@@ -190,6 +192,13 @@ hr.star-warning {
 hr.star-warning:after {
   background-color: #FCD061;
   color: #373737;
+}
+hr.star-danger {
+  border-color: white;
+}
+hr.star-danger:after {
+  background-color: #BB715C;
+  color: white;
 }
 hr.star-info {
   border-color: white;
@@ -367,6 +376,10 @@ section.info {
 }
 section.warning {
   background-color: #FCD061;
+}
+section.danger {
+  background-color: #BB715C;
+  color: white;
 }
 @media (max-width: 767px) {
   section {

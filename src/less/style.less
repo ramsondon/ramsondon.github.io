@@ -41,6 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 hr.star-info,
 hr.star-warning,
 hr.star-success,
+hr.star-danger,
 hr.star-primary {
     padding: 0;
     border: none;
@@ -53,6 +54,7 @@ hr.star-primary {
 hr.star-warning:after,
 hr.star-info:after,
 hr.star-success:after,
+hr.star-danger:after,
 hr.star-primary:after {
     content: "\f005";
     font-family: FontAwesome;
@@ -69,6 +71,14 @@ hr.star-warning {
 hr.star-warning:after {
   background-color: @yellow;
   color: @theme-primary;
+}
+
+hr.star-danger {
+  border-color: white;
+}
+hr.star-danger:after {
+  background-color: @red;
+  color: white;
 }
 
 hr.star-info {
@@ -187,6 +197,11 @@ section.info {
 
 section.warning {
   background-color: @yellow;
+}
+
+section.danger {
+  background-color: @red;
+  color: white;
 }
 
 @media(max-width:767px) {
