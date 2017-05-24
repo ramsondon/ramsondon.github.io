@@ -12,13 +12,16 @@
 	{
 	  "title": "xoo design gmbh",
 	  "label" : "Apr 2013 - Apr 2017",
-	  "position" : "Lead developer",
+	  "position" : "Lead Software Architect",
 	  "content": null,
 	  "listings" : [
-		"Project management and requirements engineering for projects in corporation with customers",
-		"Supervision of interns",
-		"Continuous Refactoring",
 		"Software Design and Architecture",
+		"Continuous controlling, refactoring and testing of code of team members to ensure functionality and growing skills of the team",
+		"Responsible for project time line management",
+		"Requirements engineering for projects in corporation with customers",
+		"Trouble solving for clients",
+		"Supervision of interns",
+		"Continuous refactoring of a plenty of legacy code",
 		"Development with in-house frameworks, Symfony and Silex"
 	  ]
 	},
@@ -38,7 +41,8 @@
 	  "position" : "Freelancer",
 	  "content": null,
 	  "listings" : [
-		"Development (Configuration) of a WordPress Website with WooCommerce Webshop."
+		"Development (Configuration) of a WordPress Website with WooCommerce Webshop.",
+		"Implementation of a WordPress WooCommerce Plugin for handling a dynamic sales limit for the whole shop to ensure the company is still a small company by law."
 	  ]
 	},
 	{
@@ -61,10 +65,10 @@
 	{
 	  "title": "xoo design gmbh",
 	  "label" : "Oct 2010 - Feb 2013",
-	  "position" : "Junior Developer",
+	  "position" : "Full Stack Developer (LAMPP), Android Developer",
 	  "content": null,
 	  "listings" : [
-		"Extending and developing of new and existing applications by using the in-house framework",
+		"Extending of existing and development of new applications by using the in-house framework",
 		"Programming of native android applications"
 	  ]
 	},
