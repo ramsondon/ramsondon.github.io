@@ -5,7 +5,7 @@
  */
 .progress {
   height: 5px;
-  margin-top: 8px;
+  margin-top: 15px;
 }
 .progress-bar-success {
   background-color: #52BC50;
@@ -18,6 +18,9 @@
 }
 .progress-bar-danger {
   background-color: #BB715C;
+}
+.text-italic {
+  font-style: italic;
 }
 .text-left-not-xs,
 .text-left-not-sm,
@@ -137,6 +140,7 @@ ul {
   padding-left: 20px;
 }
 ul li {
+  font-size: 20px;
   outline: none;
 }
 a,

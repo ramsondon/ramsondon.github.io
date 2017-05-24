@@ -111,6 +111,20 @@ _.ngx = function () {
 		}.bind(this));
 	};
 
+	/**
+	 * @link https://stackoverflow.com/questions/7467840/nl2br-equivalent-in-javascript
+	 * @param str
+	 * @param is_xhtml
+	 * @returns {string}
+	 */
+	ngx.prototype.nl2br = function(str, is_xhtml) {
+		if (_.isString(str)) {
+			var breakTag = (is_xhtml || typeof is_xhtml === 'undefined') ? '<br />' : '<br>';
+			return (str + '').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1' + breakTag + '$2');
+		}
+		return str;
+	};
+
 	ngx.prototype.assign = function (obj) {
 		return _.escape(JSON.stringify(obj));
 	};

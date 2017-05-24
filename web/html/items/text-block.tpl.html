@@ -1,22 +1,21 @@
 <div class="row">
 	<% _.forEach(ngxModel.items, function(item) { %>
 	<div class="col-sm-offset-2 col-sm-8">
-		<div class="col-sm-4"><h5><%- item.label %></h5></div>
+		<div class="col-sm-4"><h4><%- item.label %></h4></div>
 		<div class="col-sm-8">
-			<h5><%- item.title %></h5>
-
+			<h4><%- item.title %></h4>
 			<% if (item.position) { %>
-				<strong>as <%- item.position %></strong>
-				<br/>
-				<br/>
+			<p class="small">
+				<strong class="text-italic">as <%- item.position %></strong>
+			</p>
 			<% } %>
-
-			<%= item.content %>
+			<p><%= _.ngx.nl2br(item.content) %></p>
 			<ul>
 			<% _.forEach(item.listings, function (listing) { %>
 				<li><%- listing %></li>
 			<% }); %>
 			</ul>
+
 		</div>
 	</div>
 	<% }); %>

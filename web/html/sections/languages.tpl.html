@@ -2,13 +2,13 @@
 	<% _.forEach(ngxModel.items, function(item) { %>
 	<div class="col-xs-12">
 		<div class="col-xs-12 col-sm-3 text-right-not-xs">
-			<span><%- item.label %>&nbsp;<%- item.text %></span>
+			<p><%- item.label %>&nbsp;<%- item.text %></p>
 		</div>
 		<div class="col-xs-8 col-sm-6">
 			<ngx-include x-template="html/items/bar.tpl.html" x-provide="<%- _.ngx.assign(item) %>" x-type="local"></ngx-include>
 		</div>
 		<div class="col-xs-4 col-sm-3">
-			<span><%- item.percentage %>%</span>
+			<p><%- item.percentage %>%</p>
 		</div>
 	</div>
 
