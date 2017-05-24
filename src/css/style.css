@@ -14,11 +14,10 @@ p.small {
   font-size: 16px;
 }
 ul {
-  padding-left: 15px;
+  padding-left: 20px;
 }
 ul li {
   outline: none;
-  list-style: "- ";
 }
 a,
 a:hover,
