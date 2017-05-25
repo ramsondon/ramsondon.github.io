@@ -110,7 +110,7 @@ _.ngx = function () {
 		return {
 			model: el.getAttribute('x-model'),
 			template: el.getAttribute('x-template'),
-			listener: el.getAttribute('x-tplready')
+			listener: el.getAttribute('x-listen')
 		}
 	};
 
@@ -178,10 +178,10 @@ _.ngx = function () {
 		return this;
 	};
 
-	ngx.prototype.xtplready = function(key, cb) {
+	ngx.prototype.listen = function(key, cb) {
 		if (_.isObject(key) && _.isUndefined(cb)) {
 			for (var k in key) {
-				this.xtplready(k, key[k]);
+				this.listen(k, key[k]);
 			}
 		} else if (_.isString(key) && _.isFunction(cb)) {
 			this.ready_listeners [key] = cb;

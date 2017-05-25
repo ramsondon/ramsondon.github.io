@@ -60,7 +60,7 @@
     // start template engine x
 	_.ngx
 		.base('web/')
-		.xtplready({
+		.listen({
             "mainnav": initStyle,
             "contact": function () {
                 _.ngx.require("web/js/contact.min.js");

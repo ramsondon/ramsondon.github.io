@@ -44,10 +44,10 @@
 <div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
 
 <ngx-app>
-	<ngx-include x-template="html/nav.tpl.html" x-model="data/sections.json" x-tplready="mainnav"></ngx-include>
+	<ngx-include x-template="html/nav.tpl.html" x-model="data/sections.json" x-listen="mainnav"></ngx-include>
 	<ngx-include x-template="html/header.tpl.html"></ngx-include>
 	<ngx-include x-template="html/sections.tpl.html" x-model="data/sections.json"></ngx-include>
-	<ngx-include x-template="html/footer.tpl.html" x-tplready="footer"></ngx-include>
+	<ngx-include x-template="html/footer.tpl.html" x-listen="footer"></ngx-include>
 	<ngx-include x-template="html/popups.tpl.html" x-model="data/certificates.json"></ngx-include>
 </ngx-app>
 
