@@ -10,28 +10,56 @@ if ('registerElement' in document) {
 _.ngx = function () {
 
 	var ngx = function () {
-		this.base_route = '';
-		this.tpl_cache = {};
-		this.tpl_cache_mark = {};
+		this.base_route = "";
+		this.wait_cache_freq = 0;
+		this.model_cache = {
+			mark: {},
+			cache: {}
+		};
+		this.tpl_cache = {
+			mark: {},
+			cache: {}
+		};
 		this.ready_listeners = {};
 	};
 
-	ngx.prototype.get = function(resource, type, cb) {
+	ngx.prototype.get = function(resource, type) {
+		return new Promise(function (resolve, reject) {
+			var url = this.base_route + resource;
+			fetch(url, {
+				method: 'GET'
+			}).then(function(response) {
+				if (response.status !== 200) {
+					console.error('Error Report', 'Status Code: ' + response.status, response.statusText);
+					return;
+				}
+				response[type]().then(function(data) {
+					resolve(data);
+				}.bind(this));
 
-		var url = this.base_route + resource;
-		fetch(url, {
-			method: 'GET'
-		}).then(function(response) {
-			if (response.status !== 200) {
-				console.error('Error Report', 'Status Code: ' + response.status, response.statusText);
-				return;
-			}
-			response[type]().then(function(data) {
-				cb(data);
+			}.bind(this)).catch(function(err) {
+				reject(err);
 			}.bind(this));
+		}.bind(this));
+	};
 
-		}.bind(this)).catch(function(err) {
-			console.error(err);
+	ngx.prototype.toKey = function(str) {
+		return str.replace(new RegExp('[\/\.-]', 'g'), '_');
+	};
+
+	ngx.prototype.waitCache = function(cache, key) {
+		return new Promise(function(resolve, reject) {
+			var t=0;
+			var poll = function() {
+				if (t > 0 && key in cache) {
+					clearTimeout(t);
+					t = 0;
+					resolve(key);
+				} else {
+					t = setTimeout(poll, this.wait_cache_freq);
+				}
+			}.bind(this);
+			t = setTimeout(poll, this.wait_cache_freq);
 		}.bind(this));
 	};
 
@@ -51,30 +79,33 @@ _.ngx = function () {
 			}
 		}.bind(this);
 
-		var cached_file = filepath.replace(new RegExp('[\/\.]', 'g'), '_');
-
-		if (cached_file in this.tpl_cache_mark) {
-			var t=0;
-			var poll = function() {
-				if (t > 0 && cached_file in this.tpl_cache) {
-					clearTimeout(t);
-					t = 0;
-					render(this.tpl_cache[cached_file]);
-				} else {
-					t = setTimeout(poll);
-				}
-			}.bind(this);
-			t = setTimeout(poll);
-
-		} else {
-			this.tpl_cache_mark[cached_file] = filepath;
-			this.get(filepath, 'text', function(html) {
-				this.tpl_cache[cached_file] = html;
-				render(html);
-			}.bind(this));
-		}
+		this.cacheResource(filepath, this.tpl_cache, 'text')
+			.then(function(key) {
+				render(this.tpl_cache.cache[key]);
+			}.bind(this)).catch(function(k) {
+				console.warn(k);
+			});
 	};
 
+	ngx.prototype.cacheResource = function (resource, cache, res_type) {
+		return new Promise(function (resolve, reject) {
+			var key = this.toKey(resource);
+			if (key in cache.mark) {
+				this.waitCache(cache.cache, key)
+					.then(function (key) {
+						resolve(key);
+					}.bind(this));
+			} else {
+				cache.mark[key] = resource;
+				this.get(resource, res_type)
+					.then(function(response) {
+						cache.cache[key] = response;
+						resolve(key);
+					});
+			}
+		}.bind(this));
+	};
+	
 	ngx.prototype.parseInclude = function (el) {
 		return {
 			model: el.getAttribute('x-model'),
@@ -93,14 +124,18 @@ _.ngx = function () {
 		_.forEach(includes, function($cur, idx) {
 			var directive = this.parseInclude($cur);
 			if (directive.model) {
-				// check if we assigned a json object
+
 				try {
+					// check if we assigned a json object
 					_render(directive, this.readAssignment(directive.model), $cur);
 				} catch (e) {
-				// should be a relative or absolute URI
-					this.get(directive.model, 'json', function(model) {
-						_render(directive, model, $cur);
-					}.bind(this));
+					this.cacheResource(directive.model, this.model_cache, 'json')
+						.then(function(key) {
+							_render(directive, this.model_cache.cache[key], $cur);
+						}.bind(this))
+						.catch(function(key) {
+							console.warn(key);
+						});
 				}
 			} else {
 				_render(directive, null, $cur);
