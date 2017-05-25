@@ -64,13 +64,25 @@
             "mainnav": initStyle,
             "contact": function () {
                 _.ngx.require("web/js/contact.min.js");
+				// .then(function () {
+				// 	console.log('contact.min.js downloaded');
+				// });
                 initContact();
 			},
 			"footer": function () {
 				_.ngx.require("web/js/twitter.min.js");
+				// .then(function () {
+				// 	console.log('twitter.min.js downloaded');
+				// });
 				_.ngx.require("https://buttons.github.io/buttons.js");
+				// .then(function () {
+				// 	console.log('github.min.js downloaded');
+				// });
 			}
         })
-		.start();
+		.start()
+		// .then(function() {
+		// 	console.log('we rocked the whole stack!');
+		// });
 
 })(jQuery); // End of use strict

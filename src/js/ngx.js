@@ -20,7 +20,7 @@ _.ngx = function () {
 			mark: {},
 			cache: {}
 		};
-		this.ready_listeners = {};
+		this.listeners = {};
 	};
 
 	ngx.prototype.get = function(resource, type) {
@@ -64,27 +64,35 @@ _.ngx = function () {
 	};
 
 	ngx.prototype.render = function (filepath, model, el, listener) {
-		var render = function(html) {
-			var s = document.createElement('script');
-			s.type = 'text/x-ngx-tpl';
-			s.innerHTML = html;
-			el.appendChild(s);
-			el.innerHTML = _.template(el.innerHTML)(model);
-			el.innerHTML = el.querySelector('script').innerHTML;
 
-			this.include(el.querySelectorAll('ngx-include'));
-			// fix call when last child has been executed.. implement call render stack
-			if (_.isString(listener) && listener in this.ready_listeners) {
-				this.ready_listeners[listener]();
-			}
-		}.bind(this);
+		return new Promise(function(resolve, reject) {
 
-		this.cacheResource(filepath, this.tpl_cache, 'text')
-			.then(function(key) {
-				render(this.tpl_cache.cache[key]);
-			}.bind(this)).catch(function(k) {
+			var render = function(html) {
+				var s = document.createElement('script');
+				s.type = 'text/x-ngx-tpl';
+				s.innerHTML = html;
+				el.appendChild(s);
+				el.innerHTML = _.template(el.innerHTML)(model);
+				el.innerHTML = el.querySelector('script').innerHTML;
+
+					this.include(el.querySelectorAll('ngx-include'))
+						.then(function () {
+							resolve();
+							// console.log(listener,filepath);
+							if (_.isString(listener) && listener in this.listeners) {
+								this.listeners[listener]();
+							}
+						}.bind(this));
+
+			}.bind(this);
+
+			this.cacheResource(filepath, this.tpl_cache, 'text')
+				.then(function(key) {
+					render(this.tpl_cache.cache[key]);
+				}.bind(this)).catch(function(k) {
 				console.warn(k);
 			});
+		}.bind(this));
 	};
 
 	ngx.prototype.cacheResource = function (resource, cache, res_type) {
@@ -115,32 +123,48 @@ _.ngx = function () {
 	};
 
 	ngx.prototype.include = function(includes) {
-		var _render = function (directive, model, $cur) {
-			this.render(directive.template, {
-				ngxModel: model
-			}, $cur, directive.listener);
-		}.bind(this);
 
-		_.forEach(includes, function($cur, idx) {
-			var directive = this.parseInclude($cur);
-			if (directive.model) {
+		return new Promise(function (resolve, reject) {
 
-				try {
-					// check if we assigned a json object
-					_render(directive, this.readAssignment(directive.model), $cur);
-				} catch (e) {
-					this.cacheResource(directive.model, this.model_cache, 'json')
-						.then(function(key) {
-							_render(directive, this.model_cache.cache[key], $cur);
-						}.bind(this))
-						.catch(function(key) {
-							console.warn(key);
-						});
+			// count finsh rendering actions
+			var f_count = 0;
+
+			var _render = function (directive, model, $cur) {
+				this.render(directive.template, {
+					ngxModel: model
+				}, $cur, directive.listener)
+					.then(function() {
+						// wait for all components to resolve this promise
+						if (++f_count === includes.length) {
+							resolve();
+						}
+					}.bind(this));
+			}.bind(this);
+
+			_.forEach(includes, function($cur, idx) {
+				var directive = this.parseInclude($cur);
+				if (directive.model) {
+
+					try {
+						// check if we assigned a json object
+						_render(directive, this.readAssignment(directive.model), $cur);
+					} catch (e) {
+						this.cacheResource(directive.model, this.model_cache, 'json')
+							.then(function(key) {
+								_render(directive, this.model_cache.cache[key], $cur);
+							}.bind(this))
+							.catch(function(key) {
+								console.warn(key);
+							});
+					}
+				} else {
+					_render(directive, null, $cur);
 				}
-			} else {
-				_render(directive, null, $cur);
-			}
+			}.bind(this));
 
+			if (includes.length <= 0) {
+				resolve();
+			}
 		}.bind(this));
 	};
 
@@ -167,9 +191,20 @@ _.ngx = function () {
 	};
 
 	ngx.prototype.ngx = function () {
-		var apps = document.querySelectorAll('ngx-app');
-		_.forEach(apps, function(app, idx) {
-			this.include(app.querySelectorAll('ngx-include'));
+		return new Promise(function (resolve, reject) {
+			var app_count = 0;
+			var apps = document.querySelectorAll('ngx-app');
+			_.forEach(apps, function(app, idx) {
+				this.include(app.querySelectorAll('ngx-include')).then(function() {
+					if (++app_count === apps.length) {
+						resolve();
+					}
+				});
+			}.bind(this));
+
+			if (apps.length <= 0) {
+				resolve();
+			}
 		}.bind(this));
 	};
 
@@ -184,47 +219,54 @@ _.ngx = function () {
 				this.listen(k, key[k]);
 			}
 		} else if (_.isString(key) && _.isFunction(cb)) {
-			this.ready_listeners [key] = cb;
+			this.listeners [key] = cb;
 		}
 		return this;
 	};
 
-	ngx.prototype.require = function (src, callback) {
-		return (function(d, s, src) {
-			var id = src.replace(new RegExp('[\/\.:]', 'g'), '_');
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s);
-			js.id = id;
-			js.src = src;
-			fjs.parentNode.insertBefore(js, fjs);
+	ngx.prototype.require = function (src) {
+		return new Promise(function(resolve, reject) {
 
-			if (js.readyState) { //IE
-				js.onreadystatechange = function () {
-					if (js.readyState === "loaded" ||
-						js.readyState === "complete") {
-						js.onreadystatechange = null;
-						callback();
-					}
-				};
-			} else { // others than IE
-				js.onload = callback;
-			}
-		}(document, "script", src));
+			return (function(d, s, src) {
+				var id = src.replace(new RegExp('[\/\.:]', 'g'), '_');
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s);
+				js.id = id;
+				js.src = src;
+				fjs.parentNode.insertBefore(js, fjs);
+
+				if (js.readyState) { //IE
+					js.onreadystatechange = function () {
+						if (js.readyState === "loaded" ||
+							js.readyState === "complete") {
+							js.onreadystatechange = null;
+							resolve();
+						}
+					};
+				} else { // others than IE
+					js.onload = resolve;
+				}
+			}(document, "script", src));
+
+		}.bind(this));
 	};
 
 	ngx.prototype.start = function() {
-		var startup = function() {
-			this.ngx();
-		}.bind(this);
 
-		if ( ! ('fetch' in window) ) {
-			this.require("https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js", startup);
-		} else {
-			startup();
-		}
+		return new Promise(function (resolve, reject) {
 
-		return this;
+			var startup = function() {
+				this.ngx().then(resolve);
+			}.bind(this);
+
+			if ( ! ('fetch' in window) ) {
+				this.require("https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js")
+					.then(startup);
+			} else {
+				startup();
+			}
+		}.bind(this));
 	};
 
 	return new ngx;
