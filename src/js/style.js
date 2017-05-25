@@ -80,7 +80,7 @@
 				// });
 			}
         })
-		.start()
+		.ngx()
 		// .then(function() {
 		// 	console.log('we rocked the whole stack!');
 		// });

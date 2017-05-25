@@ -26,11 +26,9 @@ _.ngx = function () {
 	ngx.prototype.get = function(resource, type) {
 		return new Promise(function (resolve, reject) {
 			var url = this.base_route + resource;
-			fetch(url, {
-				method: 'GET'
-			}).then(function(response) {
+			fetch(url).then(function(response) {
 				if (response.status !== 200) {
-					console.error('Error Report', 'Status Code: ' + response.status, response.statusText);
+					reject('Error Report', 'Status Code: ' + response.status, response.statusText);
 					return;
 				}
 				response[type]().then(function(data) {
@@ -249,23 +247,6 @@ _.ngx = function () {
 				}
 			}(document, "script", src));
 
-		}.bind(this));
-	};
-
-	ngx.prototype.start = function() {
-
-		return new Promise(function (resolve, reject) {
-
-			var startup = function() {
-				this.ngx().then(resolve);
-			}.bind(this);
-
-			if ( ! ('fetch' in window) ) {
-				this.require("https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js")
-					.then(startup);
-			} else {
-				startup();
-			}
 		}.bind(this));
 	};
 
