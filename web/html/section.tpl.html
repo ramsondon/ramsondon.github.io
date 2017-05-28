@@ -1,11 +1,11 @@
-<section id="<%- ngxModel.id %>" class="<%- ngxModel.class %>">
+<section id="{{\ xngModel.id }}" class="{{\ xngModel.class }}">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 text-center">
-				<h2><%- ngxModel.title %></h2>
-				<hr class="star-<%- ngxModel.class %>">
+				<h2>{{\ xngModel.title }}</h2>
+				<hr class="star-{{\ xngModel.class }}">
 			</div>
 		</div>
-		<ngx-include x-template="<%= ngxModel.template %>" x-model="<% if (ngxModel.model) { %><%- ngxModel.model %><% } else { %><%- _.ngx.assign(ngxModel) %><% }%>" x-listen="<%- ngxModel.id %>"></ngx-include>
+		<div data-xng-view="{{ xngModel.template }}" data-xng-model="{% if (xngModel.model) { %}{{\ xngModel.model }}{% } else { %}{{\ _.xng.assign(xngModel) }}{% } %}" data-xng-listen="{{\ xngModel.id }}"></div>
 	</div>
 </section>

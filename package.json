@@ -7,6 +7,9 @@
   "author": "Matthias Schmid",
   "email": "ramsondon@gmail.com",
   "license": "MIT",
+  "dependencies": {
+    "xng": "^1.0.1"
+  },
   "devDependencies": {
     "browser-sync": "^2.13.0",
     "gulp": "^3.9.1",

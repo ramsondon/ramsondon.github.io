@@ -58,13 +58,11 @@
 <body id="page-top" class="index">
 <div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
 
-<ngx-app>
-	<ngx-include x-template="html/nav.tpl.html" x-model="data/sections.json" x-listen="mainnav"></ngx-include>
-	<ngx-include x-template="html/header.tpl.html"></ngx-include>
-	<ngx-include x-template="html/sections.tpl.html" x-model="data/sections.json"></ngx-include>
-	<ngx-include x-template="html/footer.tpl.html" x-listen="footer"></ngx-include>
-	<ngx-include x-template="html/popups.tpl.html" x-model="data/certificates.json"></ngx-include>
-</ngx-app>
+<div data-xng-view="html/nav.tpl.html" data-xng-model="data/sections.json" data-xng-listen="mainnav"></div>
+<div data-xng-view="html/header.tpl.html"></div>
+<div data-xng-view="html/sections.tpl.html" data-xng-model="data/sections.json"></div>
+<div data-xng-view="html/footer.tpl.html" data-xng-listen="footer"></div>
+<div data-xng-view="html/popups.tpl.html" data-xng-model="data/certificates.json"></div>
 
 <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
 <div class="scroll-top page-scroll hidden-xs">
@@ -87,7 +85,7 @@
 <!-- Bootstrap Core JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<script src="web/js/ngx.min.js"></script>
+<script src="vendor/xng/xng.min.js"></script>
 
 <!-- Theme JavaScript -->
 <script src="web/js/style.min.js"></script>

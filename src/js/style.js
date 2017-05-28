@@ -58,29 +58,29 @@
 	};
 
     // start template engine x
-	_.ngx
+	_.xng
 		.base('web/')
 		.listen({
             "mainnav": initStyle,
             "contact": function () {
-                _.ngx.require("web/js/contact.min.js");
+                _.xng.require("web/js/contact.min.js");
 				// .then(function () {
 				// 	console.log('contact.min.js downloaded');
 				// });
                 initContact();
 			},
 			"footer": function () {
-				_.ngx.require("web/js/twitter.min.js");
+				_.xng.require("web/js/twitter.min.js");
 				// .then(function () {
 				// 	console.log('twitter.min.js downloaded');
 				// });
-				_.ngx.require("https://buttons.github.io/buttons.js");
+				_.xng.require("https://buttons.github.io/buttons.js");
 				// .then(function () {
 				// 	console.log('github.min.js downloaded');
 				// });
 			}
         })
-		.ngx()
+		.xng()
 		// .then(function() {
 		// 	console.log('we rocked the whole stack!');
 		// });

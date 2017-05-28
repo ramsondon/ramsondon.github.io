@@ -1,16 +1,14 @@
 <div class="row">
-	<% _.forEach(ngxModel.items, function(item) { %>
+	{% _.forEach(xngModel.items, function(item) { %}
 	<div class="col-xs-12">
 		<div class="col-xs-12 col-sm-3 text-right-not-xs">
-			<p class=""><%- item.label %>&nbsp;<%- item.text %></p>
+			<p class="">{{\ item.label }}&nbsp;{{\ item.text }}</p>
 		</div>
-		<div class="col-xs-8 col-sm-6">
-			<ngx-include x-template="html/items/bar.tpl.html" x-model="<%- _.ngx.assign(item) %>"></ngx-include>
-		</div>
+		<div class="col-xs-8 col-sm-6" data-xng-view="html/items/bar.tpl.html" data-xng-model="{{\ _.xng.assign(item) }}"></div>
 		<div class="col-xs-4 col-sm-3">
-			<p class=""><%- item.percentage %>%</p>
+			<p class="">{{\ item.percentage }}%</p>
 		</div>
 	</div>
 
-	<% }); %>
+	{% }); %}
 </div>

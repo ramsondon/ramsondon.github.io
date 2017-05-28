@@ -1,12 +1,12 @@
-<% _.forEach(ngxModel.items, function(item) {  %>
+{% _.forEach(xngModel.items, function(item) {  %}
 <div class="col-sm-4 portfolio-item">
-	<a href="#<%- item.id %>" class="portfolio-link" data-toggle="modal">
+	<a href="#{{\ item.id }}" class="portfolio-link" data-toggle="modal">
 		<div class="caption">
 			<div class="caption-content">
 				<i class="fa fa-search-plus fa-3x"></i>
 			</div>
 		</div>
-		<img src="<%- item.img.src %>" class="img-responsive" alt="<%- item.img.alt %>">
+		<img src="{{\ item.img.src }}" class="img-responsive" alt="{{\ item.img.alt }}">
 	</a>
 </div>
-<% }); %>
+{% }); %}
