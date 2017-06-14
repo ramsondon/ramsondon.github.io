@@ -1,4 +1,4 @@
-<div class="portfolio-modal modal fade" id="{{\ xngModel.id }}" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="{{\ $model.id }}" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="modal-content">
 		<div class="close-modal" data-dismiss="modal">
 			<div class="lr">
@@ -10,18 +10,18 @@
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
 					<div class="modal-body">
-						<h2>{{ xngModel.project.title }}</h2>
+						<h2>{{ $model.project.title }}</h2>
 						<hr class="star-primary">
-						<img src="{{\ xngModel.img.src }}" class="img-responsive img-centered" alt="{{\ xngModel.img.alt }}">
-						<p>{{ xngModel.project.description }}</p>
+						<img src="{{\ $model.img.src }}" class="img-responsive img-centered" alt="{{\ $model.img.alt }}">
+						<p>{{ $model.project.description }}</p>
 						<ul class="list-inline item-details">
 							<li>Platform:
 								<strong>
-									<a href="{{\ xngModel.platform.url }}">{{\ xngModel.platform.name }}</a>
+									<a href="{{\ $model.platform.url }}">{{\ $model.platform.name }}</a>
 								</strong>
 							</li>
 							<li>Date:
-								<strong>{{\ xngModel.project.date }}</strong>
+								<strong>{{\ $model.project.date }}</strong>
 							</li>
 						</ul>
 						<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>

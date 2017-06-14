@@ -19,7 +19,7 @@
 				<li class="hidden">
 					<a href="#page-top"></a>
 				</li>
-				{% _.forEach(xngModel.sections, function(section) { %}
+				{% _.forEach($model.sections, function(section) { %}
 					<li class="page-scroll">
 						<a href="#{{\ section.id }}" title="{{\ section.title }}">{{\ section.menu }}</a>
 					</li>

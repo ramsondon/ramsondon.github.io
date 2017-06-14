@@ -1,4 +1,4 @@
-{% _.forEach(_.shuffle(xngModel.items), function(item, idx) {  %}
+{% _.forEach(_.shuffle($model.items), function(item, idx) {  %}
 	<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 skill-item">
 		<a href="{{\ item.url }}" target="_blank">
 			<img src="{{\ item.img.src }}" class="img-responsive" alt="{{\ item.img.title }}" title="{{\ item.img.title }}">

@@ -1,11 +1,11 @@
-<section id="{{\ xngModel.id }}" class="{{\ xngModel.class }}">
+<section id="{{\ $model.id }}" class="{{\ $model.class }}">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 text-center">
-				<h2>{{\ xngModel.title }}</h2>
-				<hr class="star-{{\ xngModel.class }}">
+				<h2>{{\ $model.title }}</h2>
+				<hr class="star-{{\ $model.class }}">
 			</div>
 		</div>
-		<div data-xng-view="{{ xngModel.template }}" data-xng-model="{% if (xngModel.model) { %}{{\ xngModel.model }}{% } else { %}{{\ _.xng.assign(xngModel) }}{% } %}" data-xng-listen="{{\ xngModel.id }}"></div>
+		<div data-xng-view="{{ $model.template }}" data-xng-model="{% if ($model.model) { %}{{\ $model.model }}{% } else { %}{{\ _.xng.assign($model) }}{% } %}" data-xng-listen="{{\ $model.id }}"></div>
 	</div>
 </section>
