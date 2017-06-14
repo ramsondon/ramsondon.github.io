@@ -8,7 +8,7 @@
   "email": "ramsondon@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "xng": "^1.0.1"
+    "xng": "^3.0.0"
   },
   "devDependencies": {
     "browser-sync": "^2.13.0",

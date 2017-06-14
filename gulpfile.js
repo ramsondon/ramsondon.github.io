@@ -58,7 +58,7 @@ gulp.task('minify-js', function() {
 
 // Copy vendor libraries from /node_modules into /vendor
 gulp.task('copy', function() {
-    gulp.src(['node_modules/xng/src/xng.min.js']).pipe(gulp.dest('vendor/xng'))
+    gulp.src(['node_modules/xng/dist/xng.min.js']).pipe(gulp.dest('vendor/xng'))
     // gulp.src(['node_modules/bootstrap/dist/**/*', '!**/npm.js', '!**/bootstrap-theme.*', '!**/*.map'])
     //     .pipe(gulp.dest('vendor/bootstrap'))
 	//
