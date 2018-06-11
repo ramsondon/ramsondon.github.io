@@ -17,6 +17,10 @@
 	{"url": "https://nodejs.org/", "img": { "src" : "web/img/tec/nodejs.png", "title": "nodejs"}},
 	{"url": "https://getfedora.org/", "img": { "src" : "web/img/tec/fedora.png", "title": "fedora"}},
 	{"url": "https://arduino.cc/", "img": { "src" : "web/img/tec/arduino.png", "title": "arduino"}},
-	{"url": "https://android.com/", "img": { "src" : "web/img/tec/android.png", "title": "android"}}
+	{"url": "https://android.com/", "img": { "src" : "web/img/tec/android.png", "title": "android"}},
+	{"url": "https://docker.com/", "img": { "src" : "web/img/tec/docker.jpg", "title": "docker"}},
+	{"url": "https://www.postgresql.org/", "img": { "src" : "web/img/tec/postgresql.png", "title": "postgresql"}},
+	{"url": "https://falconframework.org/", "img": { "src" : "web/img/tec/falcon.svg", "title": "falcon"}},
+	{"url": "https://angular.io/", "img": { "src" : "web/img/tec/angular.png", "title": "angularjs"}}
   ]
 }
