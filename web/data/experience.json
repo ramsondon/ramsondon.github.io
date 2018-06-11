@@ -1,88 +1,100 @@
 {
   "items": [
-	{
-	  "title": "Parental Leave",
-	  "label" : "Apr 2017 - Present",
-	  "position" : "Dad",
-	  "content": null,
-	  "listings" : [
-	  	"Cooking, housekeeping, professional diaper changing",
-		"Late night and weekend coder"
-	  ]
-	},
-	{
-	  "title": "xoo design gmbh",
-	  "label" : "Apr 2013 - Apr 2017",
-	  "position" : "Lead Software Architect",
-	  "content": null,
-	  "listings" : [
-		"Software Design and Architecture",
-		"Continuous controlling, refactoring and testing of code of team members to ensure functionality and growing skills of the team",
-		"Responsible for project time line management",
-		"Requirements engineering for projects in corporation with customers",
-		"Trouble solving for clients",
-		"Supervision of interns",
-		"Continuous refactoring of a plenty of legacy code",
-		"Development with in-house frameworks, Symfony and Silex"
-	  ]
-	},
-	{
-	  "title": "StyleAddicted AG",
-	  "label" : "Apr 2016 - Jun 2016",
-	  "position" : "Freelancer",
-	  "content": null,
-	  "listings" : [
-		"Implementation of an Instagram API as SAAS in python by using the django rest framework.",
-		"Automatic fetching and analysis of Instagram user data with in a multi threaded environment using celery and redis."
-	  ]
-	},
-	{
-	  "title": "Montoya Gourmet Gmbh",
-	  "label" : "Jul 2014 - Aug 2014",
-	  "position" : "Freelancer",
-	  "content": null,
-	  "listings" : [
-		"Development (Configuration) of a WordPress Website with WooCommerce Webshop.",
-		"Implementation of a WordPress WooCommerce Plugin for handling a dynamic sales limit for the whole shop to ensure the company is still a small company by law."
-	  ]
-	},
-	{
-	  "title": "Autohaus Günter Schmid",
-	  "label" : "Apr 2013 - May 2013",
-	  "position" : "Freelancer",
-	  "listings" : [
-		"Development of a real time application for handling daily orders of customers of a car service station with the ASP.NET framework and MS Sql Server in C#"
-	  ]
-	},
-	{
-	  "title": "Stahlmanufaktur Gmbh",
-	  "label" : "Apr 2011 - Okt 2011",
-	  "position" : "Freelancer",
-	  "content": null,
-	  "listings" : [
-		"Development of another tiny CMS and Website with PHP and Symfony 2.0."
-	  ]
-	},
-	{
-	  "title": "xoo design gmbh",
-	  "label" : "Oct 2010 - Feb 2013",
-	  "position" : "Full Stack Developer (LAMPP), Android Developer",
-	  "content": null,
-	  "listings" : [
-		"Extending of existing and development of new applications by using the in-house PHP framework.",
-		"Programming of native android applications"
-	  ]
-	},
-	{
-	  "title": "Internship at Vrz Informatik GmbH CC-Solution",
-	  "label" : "Feb 2010 - Apr 2010",
-	  "position" : "Intern",
-	  "content": null,
-	  "listings" : [
-		"Extension of an Enterprise Architect® Addin for internal usage. (UML, Graph-Traversal, Webservices) in C#",
-		"Implementation of a RoutingAgent for Exchange Server 2010 in C# and PowerShell Script",
-		"Development of a number to word engine for german language in C#"
-	  ]
-	}
+    {
+      "title": "affinity ventures ag",
+      "label": "Jul 2018 - Present",
+      "position": "Core Backend Software Developer",
+      "content": null,
+      "listings": [
+        "Building a micro service architecture from scratch",
+        "Using the AWS Pipeline for CI/CD",
+        "Working remotely and in-house",
+        "Working with remote developers and designers in Hungary and Germany"
+      ]
+    },
+    {
+      "title": "Parental Leave",
+      "label": "Apr 2017 - Jul 2018",
+      "position": "Dad",
+      "content": null,
+      "listings": [
+        "Cooking, housekeeping, professional diaper changing",
+        "Late night and weekend coder"
+      ]
+    },
+    {
+      "title": "xoo design gmbh",
+      "label": "Apr 2013 - Apr 2017",
+      "position": "Lead Software Architect",
+      "content": null,
+      "listings": [
+        "Software Design and Architecture",
+        "Continuous controlling, refactoring and testing of code of team members to ensure functionality and growing skills of the team",
+        "Responsible for project time line management",
+        "Requirements engineering for projects in corporation with customers",
+        "Trouble solving for clients",
+        "Supervision of interns",
+        "Continuous refactoring of a plenty of legacy code",
+        "Development with in-house frameworks, Symfony and Silex"
+      ]
+    },
+    {
+      "title": "StyleAddicted AG",
+      "label": "Apr 2016 - Jun 2016",
+      "position": "Freelancer",
+      "content": null,
+      "listings": [
+        "Implementation of an Instagram API as SAAS in python by using the django rest framework.",
+        "Automatic fetching and analysis of Instagram user data with in a multi threaded environment using celery and redis."
+      ]
+    },
+    {
+      "title": "Montoya Gourmet Gmbh",
+      "label": "Jul 2014 - Aug 2014",
+      "position": "Freelancer",
+      "content": null,
+      "listings": [
+        "Development (Configuration) of a WordPress Website with WooCommerce Webshop.",
+        "Implementation of a WordPress WooCommerce Plugin for handling a dynamic sales limit for the whole shop to ensure the company is still a small company by law."
+      ]
+    },
+    {
+      "title": "Autohaus Günter Schmid",
+      "label": "Apr 2013 - May 2013",
+      "position": "Freelancer",
+      "listings": [
+        "Development of a real time application for handling daily orders of customers of a car service station with the ASP.NET framework and MS Sql Server in C#"
+      ]
+    },
+    {
+      "title": "Stahlmanufaktur Gmbh",
+      "label": "Apr 2011 - Okt 2011",
+      "position": "Freelancer",
+      "content": null,
+      "listings": [
+        "Development of another tiny CMS and Website with PHP and Symfony 2.0."
+      ]
+    },
+    {
+      "title": "xoo design gmbh",
+      "label": "Oct 2010 - Feb 2013",
+      "position": "Full Stack Developer (LAMPP), Android Developer",
+      "content": null,
+      "listings": [
+        "Extending of existing and development of new applications by using the in-house PHP framework.",
+        "Programming of native android applications"
+      ]
+    },
+    {
+      "title": "Internship at Vrz Informatik GmbH CC-Solution",
+      "label": "Feb 2010 - Apr 2010",
+      "position": "Intern",
+      "content": null,
+      "listings": [
+        "Extension of an Enterprise Architect® Addin for internal usage. (UML, Graph-Traversal, Webservices) in C#",
+        "Implementation of a RoutingAgent for Exchange Server 2010 in C# and PowerShell Script",
+        "Development of a number to word engine for german language in C#"
+      ]
+    }
   ]
 }
