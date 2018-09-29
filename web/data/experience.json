@@ -63,7 +63,7 @@
       "title": "StyleAddicted AG",
       "label": "Apr 2016 - Jun 2016",
       "position": "Freelancer",
-      "href:" null,
+      "href": null,
       "content": null,
       "listings": [
         "Implementation of an Instagram API as SAAS in python by using the django rest framework.",
