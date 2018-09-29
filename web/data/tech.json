@@ -21,6 +21,7 @@
 	{"url": "https://docker.com/", "img": { "src" : "web/img/tec/docker.jpg", "title": "docker"}},
 	{"url": "https://www.postgresql.org/", "img": { "src" : "web/img/tec/postgresql.png", "title": "postgresql"}},
 	{"url": "https://falconframework.org/", "img": { "src" : "web/img/tec/falcon.svg", "title": "falcon"}},
+  	{"url": "https://aws.amazon.com/", "img": { "src" : "web/img/tec/aws_165x165.png", "title": "amazon web services"}},
 	{"url": "https://angular.io/", "img": { "src" : "web/img/tec/angular.png", "title": "angularjs"}}
   ]
 }
