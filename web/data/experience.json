@@ -3,14 +3,14 @@
     {
       "title": "the prosperity company",
       "label": "Oct 2018 - Present",
-      "position": "Lead Backend Software Developer",
+      "position": "Lead Software Architect",
       "href": "https://theprosperity.company",
       "content": null,
       "listings": [
         "Planning software architecture",
         "Responsible for deployment and release management applicatons in AWS ECS",
         "Responsible for remote development team of 7 in India",
-        "Responsible for software security to it's maximum",
+        "Responsible for assuring a very high level of software security",
         "Code inspections and code reviews; responsible for keeping a maintainable state of code for the whole team",
         "Definition of style guidelines and common collaboration policies",
         "Mainly working with node.js and python",
