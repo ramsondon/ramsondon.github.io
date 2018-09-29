@@ -35,6 +35,7 @@
       "title": "Parental Leave",
       "label": "Apr 2017 - Jul 2018",
       "position": "Dad",
+      "href": null,
       "content": null,
       "listings": [
         "Cooking, housekeeping, professional diaper changing",
@@ -62,6 +63,7 @@
       "title": "StyleAddicted AG",
       "label": "Apr 2016 - Jun 2016",
       "position": "Freelancer",
+      "href:" null,
       "content": null,
       "listings": [
         "Implementation of an Instagram API as SAAS in python by using the django rest framework.",
@@ -72,6 +74,7 @@
       "title": "Montoya Gourmet Gmbh",
       "label": "Jul 2014 - Aug 2014",
       "position": "Freelancer",
+      "href": null,
       "content": null,
       "listings": [
         "Development (Configuration) of a WordPress Website with WooCommerce Webshop.",
@@ -91,6 +94,7 @@
       "title": "Stahlmanufaktur Gmbh",
       "label": "Apr 2011 - Okt 2011",
       "position": "Freelancer",
+      "href": null,
       "content": null,
       "listings": [
         "Development of another tiny CMS and Website with PHP and Symfony 2.0."
