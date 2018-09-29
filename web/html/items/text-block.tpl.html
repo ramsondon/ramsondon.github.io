@@ -5,6 +5,10 @@
 		<div class="col-sm-8">
 			<h4>{{\ item.title }}</h4>
 			
+			{% if (item.href) { %}
+				<a style="color:white;" target="_blank" class="small" href="{{\ item.href }}">{{\ item.href }</a>
+			{% } %}
+			
 			{% if (item.position) { %}
 			<p class="small">
 				<strong class="text-italic">as {{\ item.position }}</strong>
