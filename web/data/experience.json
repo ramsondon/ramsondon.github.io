@@ -4,6 +4,7 @@
       "title": "the prosperity company",
       "label": "Oct 2018 - Present",
       "position": "Lead Backend Software Developer",
+      "href": "https://theprosperity.company",
       "content": null,
       "listings": [
         "Planning software architecture",
@@ -21,6 +22,7 @@
       "title": "sde ventures est.",
       "label": "Jul 2018 - Oct 2018",
       "position": "Lead Backend Software Developer",
+      "href": "https://sde.li",
       "content": null,
       "listings": [
         "Building a micro service architecture from scratch",
@@ -43,6 +45,7 @@
       "title": "xoo design gmbh",
       "label": "Apr 2013 - Apr 2017",
       "position": "Lead Software Architect",
+      "href": "https://xoo.cc",
       "content": null,
       "listings": [
         "Software Design and Architecture",
@@ -79,6 +82,7 @@
       "title": "Autohaus Günter Schmid",
       "label": "Apr 2013 - May 2013",
       "position": "Freelancer",
+      "href": "http://www.mazda-schmid.at",
       "listings": [
         "Development of a real time application for handling daily orders of customers of a car service station with the ASP.NET framework and MS Sql Server in C#"
       ]
@@ -96,6 +100,7 @@
       "title": "xoo design gmbh",
       "label": "Oct 2010 - Feb 2013",
       "position": "Full Stack Developer (LAMPP), Android Developer",
+      "href": "https://xoo.cc",
       "content": null,
       "listings": [
         "Extending of existing and development of new applications by using the in-house PHP framework.",
@@ -106,6 +111,7 @@
       "title": "Internship at Vrz Informatik GmbH CC-Solution",
       "label": "Feb 2010 - Apr 2010",
       "position": "Intern",
+      "href": "http://www.vrz.net",
       "content": null,
       "listings": [
         "Extension of an Enterprise Architect® Addin for internal usage. (UML, Graph-Traversal, Webservices) in C#",
