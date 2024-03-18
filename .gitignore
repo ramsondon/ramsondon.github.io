@@ -1,3 +1,4 @@
 .idea/
 node_modules
 notices.txt
+.DS_Store
