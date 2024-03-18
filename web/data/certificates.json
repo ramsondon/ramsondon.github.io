@@ -1,10 +1,42 @@
 {
   "items": [
+	  {
+	  "id": "coursera-software-security",
+	  "img": {
+		"src": "web/img/certificates/certificate_coursera_university_of_maryland_software_security.png",
+		"alt": "software security"
+	  },
+	  "platform": {
+		"url" : "https://www.coursera.org",
+		"name": "Coursera"
+	  },
+	  "project": {
+		"date": "April 2021",
+		"title": "Software Security",
+		"description": "Software Security by University of Maryland on Coursera. Certificate earned on April 7, 2021<br/><a class=\"btn btn-success\" href=\"https://www.coursera.org/account/accomplishments/certificate/ERM3MBTBGPFN\">Show pdf</a>"
+	  }
+	},
+	  {
+	  "id": "coursera-usable-security",
+	  "img": {
+		"src": "web/img/certificates/coursera_university_of_maryland_usable_security.png",
+		"alt": "usable security"
+	  },
+	  "platform": {
+		"url" : "https://www.coursera.org",
+		"name": "Coursera"
+	  },
+	  "project": {
+		"date": "February 2021",
+		"title": "Usable Security",
+		"description": "Usable Security by University of Maryland on Coursera. Certificate earned on February 22, 2021<br/><a class=\"btn btn-success\" href=\"https://www.coursera.org/account/accomplishments/certificate/N265SEYTNL9S\">Show pdf</a>"
+	  }
+	},
 	{
 	  "id": "coursera-pattern-discovery",
 	  "img": {
 		"src": "web/img/certificates/certificate_coursera_patterndiscovery.png",
-		"alt": "cake"
+		"alt": "pattern discovery in data mining"
 	  },
 	  "platform": {
 		"url" : "https://www.coursera.org",
@@ -20,7 +52,7 @@
 	  "id": "coursera-textretrieval",
 	  "img": {
 		"src": "web/img/certificates/certificate_coursera_textretrieval.png",
-		"alt": ""
+		"alt": "textretrieval and search engines"
 	  },
 	  "platform": {
 		"url" : "https://www.coursera.org",
@@ -36,7 +68,7 @@
 	  "id": "mongodb-m101p",
 	  "img": {
 		"src": "web/img/certificates/certificate_mongodb_m101p.png",
-		"alt": ""
+		"alt": "mongodb-m101p"
 	  },
 	  "platform": {
 		"url" : "https://university.mongodb.com",
