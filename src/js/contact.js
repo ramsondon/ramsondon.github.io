@@ -21,15 +21,15 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-				url: "https://formspree.io/ramsondon@gmail.com",
+				url: "https://formsubmit.co/ajax/ramsondon@gmail.com",
 				type: "POST",
                 data: {
 					_subject: "ramsondon.github.io by " + name,
-				    _gotcha: $('input[name="_gotcha"]').val(),
+                    _honey: $('input[name="_honey"]').val(),
                     name: name,
                     phone: phone,
-                    _format: "plain",
-                    _replyTo: email,
+                    _template: "basic",
+                    _replyto: email,
                     message: message
                 },
                 dataType: 'json',
