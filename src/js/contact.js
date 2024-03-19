@@ -21,7 +21,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-				url: "https://formsubmit.co/ajax/ramsondon@gmail.com",
+				url: "https://formsubmit.co/ajax/b9ed70fdc178c4f2916a0d7e0f7845ae",
 				type: "POST",
                 data: {
 					_subject: "ramsondon.github.io by " + name,
