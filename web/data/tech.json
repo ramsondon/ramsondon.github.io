@@ -22,6 +22,9 @@
 	{"url": "https://www.postgresql.org/", "img": { "src" : "web/img/tec/postgresql.png", "title": "postgresql"}},
 	{"url": "https://falconframework.org/", "img": { "src" : "web/img/tec/falcon.svg", "title": "falcon"}},
   	{"url": "https://aws.amazon.com/", "img": { "src" : "web/img/tec/aws_165x165.png", "title": "amazon web services"}},
-	{"url": "https://angular.io/", "img": { "src" : "web/img/tec/angular.png", "title": "angularjs"}}
+	{"url": "https://angular.io/", "img": { "src" : "web/img/tec/angular.png", "title": "angularjs"}},
+	{"url": "https://spring.io/projects/spring-boot", "img": { "src" : "web/img/tec/spring-boot-logo.png", "title": "spring-boot"}},
+	{"url": "https://vercel.com", "img": { "src" : "web/img/tec/vercel-logo.jpeg", "title": "vercel"}},
+	{"url": "https://react.dev/", "img": { "src" : "web/img/tec/react.webp", "title": "react"}}
   ]
 }
