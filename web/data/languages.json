@@ -2,25 +2,25 @@
   "items": [
 	{
 	  "label": "German",
-	  "text": "native speaker",
+	  "text": " - native speaker",
 	  "percentage": 100,
 	  "class": "success"
 	},
 	{
 	  "label": "English",
-	  "text": "fluently",
+	  "text": " - fluent",
 	  "percentage": 90,
 	  "class": "success"
 	},
 	{
 	  "label": "Spanish",
-	  "text": "more or less fluently",
+	  "text": " - fluent",
 	  "percentage": 70,
 	  "class": "info"
 	},
 	{
 	  "label": "French",
-	  "text": "survival skills",
+	  "text": " - basic proficiency",
 	  "percentage": 45,
 	  "class": "warning"
 	}

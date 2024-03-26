@@ -1,34 +1,44 @@
 {
   "items": [
     {
-      "title": "the prosperity company",
-      "label": "Oct 2018 - Present",
-      "position": "Lead Software Architect",
+      "title": "prosperity solutions AG",
+      "label": "Mar 2022 - Present",
+      "position": "Senior Software Architect",
       "href": "https://theprosperity.company",
       "content": null,
       "listings": [
-        "Planning software architecture",
-        "Responsible for deployment and release management applicatons in AWS ECS",
-        "Responsible for remote development team of 7 in India",
-        "Responsible for assuring a very high level of software security",
-        "Code inspections and code reviews; responsible for keeping a maintainable state of code for the whole team",
-        "Definition of style guidelines and common collaboration policies",
-        "Mainly working with node.js and python",
-        "Working remotely and in-house",
-        "Collaboration with remote developers and designers in Hungary, India and Germany"
+        "Steered the design and implementation of OAuth2 secured REST APIs, providing access to life insurance data, thus enabling 25+ third-party platforms to fetch data and create life insurance applications in Python with Django",
+        "Implemented SOAP APIs compliant with the German insurance standard BiPRO, connecting to various third-party platforms to deliver insurance data to brokers",
+        "Managed the development and maintenance of the organization-wide life insurance API gateway, serving over 5.8 million daily requests",
+        "Established and operated continuous integration and delivery pipelines using GitHub workflows and AWS CI/CD pipelines",
+        "Secured multi-tier application with antivirus scanner and OAuth2 / SAML authentication mechanisms in collaboration with a remote DevOps company",
+        "Successfully completed a full system penetration test conducted by a professional pen-testing company",
+        "Established and managed test automation throughout the development process",
+        "Conducted code reviews and mentored team members, fostering a culture of continuous learning and improvement",
+        "Actively participated in agile ceremonies, including daily stand-ups, retrospectives, and sprint planning"
+      ]
+    },
+    {
+      "title": "the prosperity company",
+      "label": "Oct 2018 - Mar 2022",
+      "position": "Senior Software Architect",
+      "href": "https://theprosperity.company",
+      "content": null,
+      "listings": [
+        "Worked in a high-performing team as the lead architect/engineer, responsible for third-party APIs providing access to life insurance data, facilitating third-party platforms to create quotes, offers, and life insurance applications via API in Python with Django",
+        "Successfully led a cross-functional team of 7, responsible for creating a B2C web application using JavaScript with Node.js for backend, Python with Falcon for frontend, and React for mobile application development. The project led to 40% of customers using the application within the first year of its launch"
       ]
     },
     {
       "title": "sde ventures est.",
       "label": "Jul 2018 - Oct 2018",
-      "position": "Lead Backend Software Developer",
+      "position": "Lead Software Engineer Backend",
       "href": "https://sde.li",
       "content": null,
       "listings": [
-        "Building a micro service architecture from scratch",
-        "Using the AWS Pipeline for CI/CD",
-        "Working remotely and in-house",
-        "Working with remote developers and designers in Hungary, India and Germany"
+        "Developed a microservice architecture from scratch using JavaScript on Node.js and Python specifically for the insurance sector",
+        "Utilized AWS Pipeline for CI/CD, enhancing the efficiency and reliability of software builds and deployments",
+        "Collaborated with remote developers and designers in Hungary, India, and Germany, fostering a global and inclusive work culture"
       ]
     },
     {
@@ -45,15 +55,14 @@
     {
       "title": "xoo design gmbh",
       "label": "Apr 2013 - Apr 2017",
-      "position": "Lead Software Architect",
+      "position": "Vice Lead Software Architect",
       "href": "https://xoo.cc",
       "content": null,
       "listings": [
-        "Software Design and Architecture",
+        "Responsible for software design and architecture of the in house application framework which successfully empowered more than 100 customers with a professional responsive multilingual website with shop integration, document center, BPMN workflow manager, etc.",
         "Continuous controlling, refactoring and testing of code of team members to ensure functionality and growing skills of the team",
-        "Responsible for project time line management",
-        "Requirements engineering for projects in corporation with customers",
-        "Trouble solving for clients",
+        "Requirements engineering and project management in corporation with customers",
+        "Trouble solving for customers ",
         "Supervision of interns",
         "Continuous refactoring of a plenty of legacy code",
         "Development with in-house frameworks, Symfony and Silex"
