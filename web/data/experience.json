@@ -26,7 +26,7 @@
       "content": null,
       "listings": [
         "Worked in a high-performing team as the lead architect/engineer, responsible for third-party APIs providing access to life insurance data, facilitating third-party platforms to create quotes, offers, and life insurance applications via API in Python with Django",
-        "Successfully led a cross-functional team of 7, responsible for creating a B2C web application using JavaScript with Node.js for backend, Python with Falcon for frontend, and React for mobile application development. The project led to 40% of customers using the application within the first year of its launch"
+        "Successfully led a cross-functional team of 7, responsible for creating a B2C web application using JavaScript with Node.js and Python with Falcon for backend, React for frontend and React Native for mobile application development. The project led to 40% of customers using the application within the first year of its launch"
       ]
     },
     {
@@ -61,7 +61,7 @@
       "listings": [
         "Responsible for software design and architecture of the in house application framework which successfully empowered more than 100 customers with a professional responsive multilingual website with shop integration, document center, BPMN workflow manager, etc.",
         "Continuous controlling, refactoring and testing of code of team members to ensure functionality and growing skills of the team",
-        "Requirements engineering and project management in corporation with customers",
+        "Requirements engineering and project management in collaboration with customers",
         "Trouble solving for customers ",
         "Supervision of interns",
         "Continuous refactoring of a plenty of legacy code",
@@ -96,7 +96,7 @@
       "position": "Freelancer",
       "href": "http://www.mazda-schmid.at",
       "listings": [
-        "Development of a real time application for handling daily orders of customers of a car service station with the ASP.NET framework and MS Sql Server in C#"
+        "Development of a real-time application for handling daily orders of customers of a car service station with the ASP.NET framework and MS Sql Server in C#"
       ]
     },
     {
@@ -106,7 +106,7 @@
       "href": null,
       "content": null,
       "listings": [
-        "Development of another tiny CMS and Website with PHP and Symfony 2.0."
+        "Development of a custom CMS and Website with PHP and Symfony 2.0."
       ]
     },
     {
