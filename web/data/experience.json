@@ -7,15 +7,14 @@
       "href": "https://theprosperity.company",
       "content": null,
       "listings": [
-        "Steered the design and implementation of OAuth2 secured REST APIs, providing access to life insurance data, thus enabling 25+ third-party platforms to fetch data and create life insurance applications in Python with Django",
+        "Steered the design and agile implementation of OAuth2 secured REST APIs, providing access to life insurance data, thus enabling 25+ third-party platforms to fetch data and create life insurance applications in Python with Django",
         "Implemented SOAP APIs compliant with the German insurance standard BiPRO, connecting to various third-party platforms to deliver insurance data to brokers",
         "Managed the development and maintenance of the organization-wide life insurance API gateway, serving over 5.8 million daily requests",
         "Established and operated continuous integration and delivery pipelines using GitHub workflows and AWS CI/CD pipelines",
         "Secured multi-tier application with antivirus scanner and OAuth2 / SAML authentication mechanisms in collaboration with a remote DevOps company",
         "Successfully completed a full system penetration test conducted by a professional pen-testing company",
-        "Established and managed test automation throughout the development process",
+        "Established and managed test automation throughout the development process with over 20000 tests",
         "Conducted code reviews and mentored team members, fostering a culture of continuous learning and improvement",
-        "Actively participated in agile ceremonies, including daily stand-ups, retrospectives, and sprint planning"
       ]
     },
     {
