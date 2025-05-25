@@ -1,8 +1,20 @@
 {
   "items": [
     {
+      "title": "Liechtenstein Life Assurance AG",
+      "label": "Jun 2024 - Present",
+      "position": "Full Stack Senior Software Engineer",
+      "href": "https://liechtensteinlife.com",
+      "content": null,
+      "listings": [
+        "Developed an AI-powered system for digitizing physical mail, including language detection, content classification, automated archiving, and seamless integration with the core insurance system",
+        "Automated regulatory broker checks for fraud detection and data validation, resulting in an 80% time savings",
+        "Jointly responsible for the strategic cloud migration of internal Software from AWS to Azure, maintaining operational stability and compliance"
+      ]
+    },
+    {
       "title": "prosperity solutions AG",
-      "label": "Mar 2022 - Present",
+      "label": "Mar 2022 - Jun 2024",
       "position": "Senior Software Architect",
       "href": "https://theprosperity.company",
       "content": null,
@@ -20,7 +32,7 @@
     {
       "title": "the prosperity company",
       "label": "Oct 2018 - Mar 2022",
-      "position": "Senior Software Architect",
+      "position": "Software Developer / Senior Software Architect",
       "href": "https://theprosperity.company",
       "content": null,
       "listings": [
@@ -31,7 +43,7 @@
     {
       "title": "sde ventures est.",
       "label": "Jul 2018 - Oct 2018",
-      "position": "Lead Software Engineer Backend",
+      "position": "Software Developer",
       "href": "https://sde.li",
       "content": null,
       "listings": [
@@ -54,7 +66,7 @@
     {
       "title": "xoo design gmbh",
       "label": "Apr 2013 - Apr 2017",
-      "position": "Vice Lead Software Architect",
+      "position": "Senior Software Developer",
       "href": "https://xoo.cc",
       "content": null,
       "listings": [
