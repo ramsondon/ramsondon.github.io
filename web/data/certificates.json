@@ -1,84 +1,100 @@
 {
   "items": [
-	  {
-	  "id": "coursera-software-security",
-	  "img": {
-		"src": "web/img/certificates/certificate_coursera_university_of_maryland_software_security_792x612.png",
-		"alt": "software security"
-	  },
-	  "platform": {
-		"url" : "https://www.coursera.org",
-		"name": "Coursera"
-	  },
-	  "project": {
-		"date": "April 2021",
-		"title": "Software Security",
-		"description": "Software Security by University of Maryland on Coursera. Certificate earned on April 7, 2021<br/><a class=\"btn btn-success\" href=\"https://www.coursera.org/account/accomplishments/certificate/ERM3MBTBGPFN\">Show pdf</a>"
-	  }
-	},
-	  {
-	  "id": "coursera-usable-security",
-	  "img": {
-		"src": "web/img/certificates/certificate_coursera_university_of_maryland_usable_security_792x612.png",
-		"alt": "usable security"
-	  },
-	  "platform": {
-		"url" : "https://www.coursera.org",
-		"name": "Coursera"
-	  },
-	  "project": {
-		"date": "February 2021",
-		"title": "Usable Security",
-		"description": "Usable Security by University of Maryland on Coursera. Certificate earned on February 22, 2021<br/><a class=\"btn btn-success\" href=\"https://www.coursera.org/account/accomplishments/certificate/N265SEYTNL9S\">Show pdf</a>"
-	  }
-	},
-	{
-	  "id": "coursera-pattern-discovery",
-	  "img": {
-		"src": "web/img/certificates/certificate_coursera_patterndiscovery.png",
-		"alt": "pattern discovery in data mining"
-	  },
-	  "platform": {
-		"url" : "https://www.coursera.org",
-		"name": "Coursera"
-	  },
-	  "project": {
-		"date": "March 2015",
-		"title": "Pattern Discovery in Data Mining",
-		"description": "Pattern Discovery in Data Mining by University of Illinois at Urbana-Champaign on Coursera. Certificate earned on March 19, 2015<br/><a class=\"btn btn-success\" href=\"https://www.coursera.org/account/accomplishments/certificate/D6MMR4CS33\">Show pdf</a>"
-	  }
-	},
-	{
-	  "id": "coursera-textretrieval",
-	  "img": {
-		"src": "web/img/certificates/certificate_coursera_textretrieval.png",
-		"alt": "textretrieval and search engines"
-	  },
-	  "platform": {
-		"url" : "https://www.coursera.org",
-		"name": "Coursera"
-	  },
-	  "project": {
-		"date": "April 2015",
-		"title": "Text Retrieval and Search Engines",
-		"description": "Text Retrieval and Search Engines by University of Illinois at Urbana-Champaign on Coursera. Certificate earned on April 19, 2015<br/><a class=\"btn btn-success\" href=\"https://www.coursera.org/account/accomplishments/certificate/MTR5UQEPNT\">Show pdf</a>"
-	  }
-	},
-	{
-	  "id": "mongodb-m101p",
-	  "img": {
-		"src": "web/img/certificates/certificate_mongodb_m101p.png",
-		"alt": "mongodb-m101p"
-	  },
-	  "platform": {
-		"url" : "https://university.mongodb.com",
-		"name": "MongoDB University"
-	  },
-	  "project": {
-		"date": "October - December 2015",
-		"title": "MongoDB",
-		"description": "MongoDB for Developers at MongoDB University earned on December 8, 2015<br/><a class=\"btn btn-success\" href=\"http://education.mongodb.com/downloads/certificates/f8f676f13b1a4f7bbdf103937f16a8cf/Certificate.pdf\">Show pdf</a>"
-	  }
-	}
+    {
+      "id": "coursera-software-security",
+      "img": {
+        "src": "web/img/certificates/certificate_coursera_university_of_maryland_usable_security_792x612.png",
+        "alt": "leading teams"
+      },
+      "platform": {
+        "url": "https://www.coursera.org",
+        "name": "Coursera"
+      },
+      "project": {
+        "date": "June 2025",
+        "title": "Leading Teams: Developing as a Leader",
+        "description": "Leading Teams: Developing as a Leader by University of Illinois Urbana-Champaign on Coursera. Certificate earned on April 7, 2021<br/><a class=\"btn btn-success\" href=\"https://coursera.org/share/e31896496865c3661b8a52098cca4f1f\">Show pdf</a>"
+      }
+    },
+    {
+      "id": "coursera-software-security",
+      "img": {
+        "src": "web/img/certificates/certificate_coursera_university_of_maryland_software_security_792x612.png",
+        "alt": "software security"
+      },
+      "platform": {
+        "url": "https://www.coursera.org",
+        "name": "Coursera"
+      },
+      "project": {
+        "date": "April 2021",
+        "title": "Software Security",
+        "description": "Software Security by University of Maryland on Coursera. Certificate earned on April 7, 2021<br/><a class=\"btn btn-success\" href=\"https://www.coursera.org/account/accomplishments/certificate/ERM3MBTBGPFN\">Show pdf</a>"
+      }
+    },
+    {
+      "id": "coursera-usable-security",
+      "img": {
+        "src": "web/img/certificates/certificate_coursera_university_of_maryland_usable_security_792x612.png",
+        "alt": "usable security"
+      },
+      "platform": {
+        "url": "https://www.coursera.org",
+        "name": "Coursera"
+      },
+      "project": {
+        "date": "February 2021",
+        "title": "Usable Security",
+        "description": "Usable Security by University of Maryland on Coursera. Certificate earned on February 22, 2021<br/><a class=\"btn btn-success\" href=\"https://www.coursera.org/account/accomplishments/certificate/N265SEYTNL9S\">Show pdf</a>"
+      }
+    },
+    {
+      "id": "coursera-pattern-discovery",
+      "img": {
+        "src": "web/img/certificates/certificate_coursera_patterndiscovery.png",
+        "alt": "pattern discovery in data mining"
+      },
+      "platform": {
+        "url": "https://www.coursera.org",
+        "name": "Coursera"
+      },
+      "project": {
+        "date": "March 2015",
+        "title": "Pattern Discovery in Data Mining",
+        "description": "Pattern Discovery in Data Mining by University of Illinois at Urbana-Champaign on Coursera. Certificate earned on March 19, 2015<br/><a class=\"btn btn-success\" href=\"https://www.coursera.org/account/accomplishments/certificate/D6MMR4CS33\">Show pdf</a>"
+      }
+    },
+    {
+      "id": "coursera-textretrieval",
+      "img": {
+        "src": "web/img/certificates/certificate_coursera_textretrieval.png",
+        "alt": "textretrieval and search engines"
+      },
+      "platform": {
+        "url": "https://www.coursera.org",
+        "name": "Coursera"
+      },
+      "project": {
+        "date": "April 2015",
+        "title": "Text Retrieval and Search Engines",
+        "description": "Text Retrieval and Search Engines by University of Illinois at Urbana-Champaign on Coursera. Certificate earned on April 19, 2015<br/><a class=\"btn btn-success\" href=\"https://www.coursera.org/account/accomplishments/certificate/MTR5UQEPNT\">Show pdf</a>"
+      }
+    },
+    {
+      "id": "mongodb-m101p",
+      "img": {
+        "src": "web/img/certificates/certificate_mongodb_m101p.png",
+        "alt": "mongodb-m101p"
+      },
+      "platform": {
+        "url": "https://university.mongodb.com",
+        "name": "MongoDB University"
+      },
+      "project": {
+        "date": "October - December 2015",
+        "title": "MongoDB",
+        "description": "MongoDB for Developers at MongoDB University earned on December 8, 2015<br/><a class=\"btn btn-success\" href=\"http://education.mongodb.com/downloads/certificates/f8f676f13b1a4f7bbdf103937f16a8cf/Certificate.pdf\">Show pdf</a>"
+      }
+    }
   ]
 }
