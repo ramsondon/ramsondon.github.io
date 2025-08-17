@@ -1,6 +1,22 @@
 {
   "items": [
     {
+      "id": "coursera-leading-teams-building-effective-team-cultures",
+      "img": {
+        "src": "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~EQTZTZFZGZDE/CERTIFICATE_LANDING_PAGE~EQTZTZFZGZDE.jpeg",
+        "alt": "buliding effective team cultures"
+      },
+      "platform": {
+        "url": "https://www.coursera.org",
+        "name": "Coursera"
+      },
+      "project": {
+        "date": "June 2025",
+        "title": "Leading Teams: Building Effective Team Cultures",
+        "description": "Leading Teams: Building Effective Team Cultures by University of Illinois Urbana-Champaign on Coursera. Certificate earned on Jul, 2025<br/><a class=\"btn btn-success\" href=\"https://www.coursera.org/account/accomplishments/certificate/EQTZTZFZGZDE\">Show pdf</a>"
+      }
+    },
+    {
       "id": "coursera-leading-teams-developing-as-a-leader",
       "img": {
         "src": "web/img/certificates/ceftificate_coursera_leading_teams_jun_25.png",
