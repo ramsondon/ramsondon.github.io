@@ -1,6 +1,22 @@
 {
   "items": [
     {
+      "id": "microsoft-certified-azure-fundamentals-az-900",
+      "img": {
+        "src": "web/img/certificates/microsoft_azure_az900.png",
+        "alt": "Azure Fundamentals"
+      },
+      "platform": {
+        "url": "https://learn.microsoft.com",
+        "name": "Microsoft"
+      },
+      "project": {
+        "date": "August 2025",
+        "title": "Microsoft Certified: Azure Fundamentals AZ-900",
+        "description": "Microsoft Certified: Azure Fundamentals AZ-900 at Microsoft. Certificate earned on August 19, 2025<br/><a class=\"btn btn-success\" href=\"https://learn.microsoft.com/api/credentials/share/en-us/MatthiasSchmid-6648/F0BD7123F756013F?sharingId=D5C85FBB23214697\">Show pdf</a>"
+      }
+    },
+    {
       "id": "coursera-leading-teams-building-effective-team-cultures",
       "img": {
         "src": "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~EQTZTZFZGZDE/CERTIFICATE_LANDING_PAGE~EQTZTZFZGZDE.jpeg",
